@@ -27,6 +27,7 @@ export const MerchCarousel = () => {
       setSessionId(sessionIdFromCookie); // Store it in state
     } else {
       setError('Session ID not found.');
+      console.log(error)
     }
   }, []);
 
