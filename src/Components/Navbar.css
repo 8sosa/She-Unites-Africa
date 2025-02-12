@@ -1,0 +1,42 @@
+.navbarContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbarToggle {
+    display: none;
+}
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+}
+.navLink {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.navLink:hover, .navLink.active {
+    color: #A76399;
+}
+.navSocials {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+.navSocial:hover {
+    color: #A76399;
+}
+
+@media (max-width: 48rem) {
+
+}
+@media (max-width: 48rem) {
+    .navbarToggle {
+        display: flex;
+    }
+    .navLinks {
+        display: none;
+    }
+}

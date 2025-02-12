@@ -1,0 +1,70 @@
+.TestimonialCard {
+    max-width: 100%;
+    width: 45rem !important;
+    height: fit-content;
+    background-image: url('../Images/testiBg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    border: 2px solid #000;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.testimonial-avatar {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 20px;
+}
+.testimonial-header-text {
+    flex: 1;
+    text-align: end;
+}
+.testimonial-title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0;
+    color: #fff;
+}
+.testimonial-tag {
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin: 0;
+    color: #fff;
+}
+.testiText {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+    max-width: 100%;
+}
+.modal-content {
+    width: fit-content;
+    border: 3px solid #A76399;
+    border-radius: 20px;
+}
+.modalBody {
+    max-width: 100%;
+    width: fit-content;
+    padding: 3rem;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.modalBody p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.modalBody img {
+    border: 1px solid #000;
+    border-radius: 1rem;
+}

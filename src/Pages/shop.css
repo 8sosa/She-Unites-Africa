@@ -1,0 +1,43 @@
+.sloganShop {
+    font-size: 5rem;
+    color: #A76399;
+    text-wrap: nowrap;
+}
+.merchPic {
+    max-width: 100%;
+}
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    max-width: 100%;
+}
+.item {
+    max-width: 100%;
+    width: 20rem;
+}
+.sticky-div {
+    position: sticky;
+    top: 0; /* Distance from the top of the viewport */
+    z-index: 1000; /* Optional: to ensure it stays above other content */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: for visual effect */
+}
+.quantity {
+    border: 3px solid #000 !important;
+    border-radius: 2rem !important;
+    background-color: #fff !important;
+    width: 100%;
+    max-width: 20rem;
+    color: #000 !important;
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+}
+.quantity Button {
+    border: 0px !important;
+    padding: .1rem .2rem !important;
+}
+.quantity Button:hover {
+    background-color: #f298e01e !important;
+}

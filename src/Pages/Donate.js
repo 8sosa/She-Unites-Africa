@@ -1,0 +1,134 @@
+import React, {useState} from 'react'
+import { Button, Container, Form } from 'react-bootstrap';
+import ImpactCarousel from '../Components/impactCarousel';
+import { FaFistRaised, FaUsers, FaHandsHelping } from "react-icons/fa";
+
+
+export default function Donate() {
+  const [activeDonation, setActiveDonation] = useState("");
+  const [donationAmount, setDonationAmount] = useState(""); // State for active donation
+
+  const handleDonationClick = (amount) => {
+    setActiveDonation(amount);
+    setDonationAmount(amount);
+  };
+
+  return (
+    <>
+      <div className='homeHero mont'>
+        <Container className='homeHeroCont'>
+          <h1 className='aboutTitle'>donate to</h1>
+          <h1 className='aboutTitle'>she unites africa</h1>
+          <button className='atcBtn'>DONATE now</button>
+        </Container>
+      </div>
+      <div className='abtYtBg2 p-5'>
+        <Container className='abtYtBg2Cont mont'>
+          <h1 className='homeSectionTitle tal mb-5'>Why donate?</h1>
+          <p className='tal mb-5'>The mission of Women's Empowerment is to educate and empower females over Africa with the skills and confidence necessary to get a job, maintain a healthy lifestyle,  and be the best version of themselves that they can be.</p>
+          <h1 className='homeSectionTitle mb-5 tal'>we’ve achieved...</h1>
+          <div className='abtCardBox p-5'>
+              <div className='purpCard align-items-start p-5 jcsb'>
+                <h1 className='tal'>Sponsorships</h1>
+                <p className='tal'>Support our events, programs, or initiatives through financial or in-kind sponsorships that directly impact the lives of women and girls.</p>
+              </div>
+              <div className='purpCard align-items-center p-5 jcsb'>
+                <h1 className='tal'>Skill-Sharing Programs</h1>
+                <p className='tal'>Offer your expertise through workshops, mentorship, or training sessions that equip women and girls with practical skills for personal and professional growth.</p>
+              </div>
+              <div className='purpCard align-items-center p-5 jcsb'>
+                <h1 className='tal'>Joint Initiatives</h1>
+                <p className='tal'>Co-create programs or campaigns that align with your organization’s goals and our mission, leveraging mutual strengths to achieve shared objectives.</p>
+              </div>
+              <div className='purpCard align-items-center p-5 jcsb'>
+                <h1 className='tal'>Product Partnerships</h1>
+                <p className='tal'>Collaborate with us to develop co-branded merchandise or services that benefit both parties while contributing to our initiatives.</p>
+              </div>
+          </div>
+        </Container>
+      </div>
+      <div className='lytPurpBg p-5'>
+        <Container className='lytPurpBgCont p-5 d-flex justify-content-center align-items-center'>
+          <Form>
+            <div className='d-flex justify-content-center mb-4'>
+              <Form.Check
+                type="switch"
+                id="custom-switch"
+                label="RECURRING"
+                className='toggle-switch'
+              />
+            </div>
+            <div className="donation-buttons d-flex justify-content-center gap-2 mb-4">
+              {["£ 10", "£ 25", "£ 50", "£ 100"].map((amount) => (
+                <button
+                  key={amount}
+                  name="donation"
+                  className={`donation-btn ${activeDonation === amount ? "active" : ""}`}
+                  aria-label={amount}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleDonationClick(amount); // Handle click
+                  }}
+                >
+                  {amount}
+                </button>
+              ))}
+            </div>
+            <div className='donateCard'>
+              <div className='d-flex gap-5 mb-3'>
+                <Form.Control type="text" placeholder="First Name" name='firstName' className='donation-input' />
+                <Form.Control type="text" placeholder="Last Name" name='lastName' className='donation-input' />
+              </div>
+              <div className='d-flex gap-5 mb-3'>
+                <Form.Control type="text" placeholder={donationAmount || "£ 00"} name='donation-field' className='donation-input'/>
+                <Form.Control type="text" placeholder="Dedication" name='dedication' className='donation-input' />
+              </div>
+              <div className='d-flex align-items-center mb-3'>
+                <Form.Check label="Join Our Newsletter" name="newsletter" type='checkbox' id='newsletter' />
+              </div>
+              <Button type='submit' className='button'>DONATE</Button>
+            </div>
+          </Form>
+        </Container>
+      </div>
+      <div className='ytBg'>
+        <Container className='d-flex flex-column align-items-center'>
+          <h1 className='homeSectionTitle mont mb-5'>impact</h1>
+          <ImpactCarousel />
+          <span className='moreLink mont mt-5 mb-5'>See More...</span>
+        </Container>
+      </div>
+      <div className='abtYtBg2 p-5'>
+        <Container className='abtYtBg2Cont mont'>
+          <h1 className='homeSectionTitle tal mb-5'>Why donate?</h1>
+          <p>Transparency is the cornerstone of our work. We believe that every supporter, donor, and partner has the right to know how their contributions are making a difference. That’s why we’re committed to maintaining the highest standards of accountability and openness in everything we do.</p>
+          <ol>
+            <li>Clear Financial Reporting: We ensure that all donations are tracked and allocated effectively. A detailed breakdown of our expenditures is made available annually, showing exactly how your support drives change.</li>
+            <li>Program Impact Tracking: Each initiative we undertake is measured and reported, highlighting the lives touched, communities transformed, and milestones achieved through your support.</li>
+            <li>Ethical Practices: Integrity guides our operations. From partner collaborations to donor management, we adhere to strict ethical guidelines to ensure fairness, honesty, and respect for all stakeholders.</li>
+            <li>Donor Feedback: We value your voice. Regular updates, newsletters, and opportunities to provide feedback keep our community informed and engaged in shaping the future of SHEUNITESAFRICA.</li>
+          </ol>
+        </Container>
+      </div>
+      <div className='lytPurpBg p-5'>
+        <Container className='lytPurpBgCont mont'>
+          <h1 className='tal'>How We Collaborate</h1>
+          <div className='donateCont'>
+            <div className='blackCard'>
+                <FaHandsHelping className='abtIcon' />
+                <h1 className='abtSectionHeader'>Volunteer</h1>
+            </div>
+            <div className='blackCard'>
+                <FaFistRaised className='abtIcon' />
+                <h1 className='abtSectionHeader'>Merchandise Support</h1>
+            </div>
+            <div className='blackCard'>
+                <FaUsers className='abtIcon' />
+                <h1 className='abtSectionHeader'>Partnership Opportunities</h1>
+            </div>
+          </div>
+        </Container>
+      </div>
+    </>
+  )
+}

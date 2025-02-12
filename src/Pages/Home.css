@@ -1,0 +1,303 @@
+.homeHero {
+    position: relative;
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../Images/homeHeroBg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.homeHero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 1; /* Ensure the overlay is on top */
+    opacity: 0.6;
+}
+.homeHeroCont {
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: #fff;
+    margin: 7.5rem 0rem;
+    z-index: 2;
+}
+.heroTitle {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+.heroBtn {
+    font-size: 1.5rem;
+    border: 2px solid #000;
+    border-radius: 2rem;
+    background-color: #d9d9d9;
+    color: #000;
+    padding: .5rem 2rem;
+    text-wrap: nowrap;
+}
+.heroBtn:hover {
+    color: #fff;
+    background-color: #A76399;
+    border: 3px solid #000;
+}
+.ytTitle, .ytText {
+    color: #fff;
+}
+.ytTitle {
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    font-weight: 600;
+}
+.ytText {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: start;
+}
+.statementCardRow {
+    margin-top: 5rem;
+}
+.statementCardRow1 {
+    margin-top: 2rem;
+}
+.statementCard {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 1rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.statementCardText {
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 30rem;
+    text-align: start;
+}
+.statementCardTitle {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+.vectorCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.vector1 {
+    width: 30%;
+}
+.purpSectionTitle {
+    color: #A76399;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 3px solid #A76399;
+    border-radius: 0px;
+    padding: 5px 15px;
+    width: fit-content;
+    margin-bottom: 5rem;
+}
+.homeSectionTitle {
+    font-size: 2rem;
+    font-weight: 400;
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 1rem; /* Space between items */
+    margin: 5rem 0rem;
+}
+.gallery-item {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.purpCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #A76399;
+    color: #fff;
+    border: 3px solid #000;
+    border-radius: 2rem;
+    width: 100%;
+    height: fit-content;
+    padding: 2rem;
+}
+.cardTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.cardText {
+    font-size: 1.8rem;
+    font-weight: 300;
+    max-width: 100%;
+}
+.cardText, .cardTitle {
+    text-align: start;
+}
+.moreLink {
+    font-size: 1rem;
+    font-weight: 300;
+    border-bottom: 1px solid #000;
+    padding-bottom: 1px;
+    text-transform: uppercase;
+    align-self: flex-end;
+}
+.moreLink:hover {
+    color: #A76399;
+    border-bottom: 1px solid #A76399;
+}
+.donateBg {
+    position: relative; /* Needed for the ::before pseudo-element */
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*pseudo-element for the overlay */
+  .donateBg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/img2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    z-index: 1; /* Ensure the overlay is on top */
+    opacity: 0.2;
+  }
+  /* Ensure content inside the donateBg is visible */
+  .donateBg > * {
+    position: relative;
+    z-index: 2; /* Place content above the overlay */
+  }
+.donateCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0rem;
+}
+.donateText {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: start;
+    margin-bottom: 3rem;
+    color: #000;
+}
+.shopTitle {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    padding: 0px 20px 2px 0px;
+    width: fit-content;
+}
+.homeShop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 5rem; /* Space between items */
+    margin: 5rem 0rem;
+    max-width: 100%;
+}
+.homeShopItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    max-width: 25rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    gap: 1rem; /* Space between items */
+}
+.homeShopItem img {
+    background-color: #fff;
+    max-width: 100%;
+    min-width: 15rem;
+    height: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+.homeShopItem span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: start;
+    text-transform: uppercase;
+}
+.shopSloganCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shopSlogan {
+    transform: rotate(270deg);
+    font-size: 5rem;
+    color: #A76399;
+    text-wrap: nowrap;
+}
+.partners {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+.partners img {
+    min-width: 10rem;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+Form {
+    gap: 2rem;
+}
+.formButton {
+    border: 3px solid #000 !important;
+    border-radius: 20px !important;
+    width: 10rem;
+    background-color: #fff !important;
+    color: #000 !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+}
+.inputField {
+    border: 2px solid #000;
+    border-radius: 15px;
+    background-color: #fff;
+    width: 40rem;
+}
+.inputField:placeholder-shown, .inputField {
+    font-weight: 500;
+    font-size: 1.2rem;
+}

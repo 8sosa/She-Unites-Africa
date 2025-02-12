@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+.purpBg {
+  background-color: #A76399;
+  width: 100%;
+  padding: 5rem
+}
+.blackBg {
+  background-color: #000;
+  width: 100%;
+  padding: 5rem
+}
+.ytBg {
+  background-color: #fff;
+  width: 100%;
+  padding: 5rem
+}
+.full {
+  width: 100% !important;
+}
+
+.mob {
+  display: none !important;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.tar {
+  text-align: right !important;
+}
+.tal {
+  text-align: left !important;
+}
+.purp {
+  color: #A76399 !important;
+  border: #A76399 !important;
+}
+@media (max-width: 48rem) {
+  .mid {
+      display: none !important;
+  }
+}

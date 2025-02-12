@@ -1,0 +1,183 @@
+.lytPurpBg {
+    position: relative;
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../Images/homeHeroBg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lytPurpBg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #A76399;
+    z-index: 1; /* Ensure the overlay is on top */
+    opacity: 0.9;
+}
+.lytPurpBgCont {
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+    margin: 7.5rem 0rem;
+    z-index: 2;
+}
+.ytCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #A76399;
+    border: 3px solid #000;
+    border-radius: 2rem;
+    width: fit-content;
+    padding: 2rem;
+}
+.lytPurpBgCont h1 {
+    font-size: 3rem;
+}
+.lytPurpBgCont p {
+    font-size: 1.5rem;
+}
+.colSectionTitle {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: end;
+}
+.colSectionText {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    text-align: justify;
+}
+.abtYtBg2Cont {
+    padding: 5rem;
+}
+.abtYtBg2Cont p, .abtYtBg2Cont li {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: start;
+    padding-bottom: 3rem;
+}
+.abtYtBg2Cont h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.abtYtBg2Cont li {
+    color: #000;
+}
+.donateCont {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.donateCont div {
+    background-color: #000;
+    width: 25rem;
+    height: 20rem;
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 3rem;
+}
+.donateCont h1 {
+    font-size: 1.5rem;
+}
+.donateCard {
+    background-color: #fff;
+    border-radius: 20px;
+    color: #000;
+    max-width: 100%;
+    width: 50rem;
+    padding: 5rem;
+    gap: 2rem;
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+Form Button {
+    width: max-content;
+}
+.toggle-switch {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.donation-buttons .donation-btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.donation-btn {
+    background-color: #fff;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+.donation-btn.active, .donation-btn:hover {
+    background-color: #000;
+    border: 2px solid #fff;
+    color: white;
+}
+.donation-input {
+    background-color: #F5F5F5;
+    border: none;
+    padding: 1rem;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    font-size: 1.5rem;
+}
+.donation-input:placeholder-shown {
+    font-size: 1.5rem;
+}
+.form-check-input[type=checkbox] {
+    color: #000;
+    border: 1px solid #000;
+    background-color: #F5F5F5;
+}
+.business-card {
+    background-image: url('../Images/testiBg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: fit-content;
+    height: fit-content;
+    padding: 3rem;
+    border: 1px solid #000;
+    border-radius: 20px;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.business-card h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.business-card p {
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 0rem;
+}

@@ -1,0 +1,26 @@
+.carousel-item {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.EventsCarousel {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+.EventsCarouselPic {
+    margin: .5rem;
+    max-width: 25rem;
+    width: 100%;
+    border: 3px solid #A76399;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.slick-prev, .slick-next {
+    display: none !important;
+}
+.impactCard {
+    max-width: 35rem;
+}
