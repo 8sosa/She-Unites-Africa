@@ -20,16 +20,17 @@ export const MerchCarousel = () => {
     return null;
   };
 
-  // Retrieve sessionId from cookies
   useEffect(() => {
-    const sessionIdFromCookie = getCookie('sessionId'); // Get sessionId cookie
+    const sessionIdFromCookie = getCookie('sessionId');
     if (sessionIdFromCookie) {
-      setSessionId(sessionIdFromCookie); // Store it in state
+      setSessionId(sessionIdFromCookie);
     } else {
-      setError('Session ID not found.');
-      console.log(error)
+      const errMsg = 'Session ID not found.';
+      setError(errMsg);
+      console.error(errMsg);
     }
   }, []);
+  console.log(error)
 
   const settings = {
     dots: false,
