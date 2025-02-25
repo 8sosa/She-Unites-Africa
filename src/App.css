@@ -1,57 +1,116 @@
 .App {
   text-align: center;
 }
+
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
 .content {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
+/* Base Styles for Background Sections */
 .purpBg {
   background-color: #A76399;
   width: 100%;
-  padding: 5rem
+  padding: 7rem;
 }
+
 .blackBg {
   background-color: #000;
   width: 100%;
-  padding: 5rem
+  padding: 5rem;
 }
+
 .ytBg {
   background-color: #fff;
   width: 100%;
-  padding: 5rem
+  padding: 5rem;
 }
+
+/* Utility Classes */
 .full {
   width: 100% !important;
 }
 
-.mob {
-  display: none !important;
+.tall {
+  height: 100% !important;
 }
+
+.mob {
+  display: none;
+}
+
 .jcsb {
   justify-content: space-between;
 }
+
 .tar {
   text-align: right !important;
 }
+
 .tal {
   text-align: left !important;
 }
+
 .purp {
   color: #A76399 !important;
   border: #A76399 !important;
 }
+.black {
+  color: #000;
+}
+
+/* ===============================================
+   Responsive Styles
+   =============================================== */
+
+/* For screens smaller than 992px (e.g., tablets and small desktops) */
+@media (max-width: 992px) {
+  .purpBg {
+    padding: 5rem; /* Reduce padding slightly */
+  }
+  .blackBg,
+  .ytBg {
+    padding: 4rem;
+  }
+}
+
+/* For screens smaller than 768px (48rem) */
 @media (max-width: 48rem) {
   .mid {
-      display: none !important;
+    display: none !important;
+  }
+  .purpBg {
+    padding: 4rem; /* Further reduce padding */
+  }
+  .blackBg,
+  .ytBg {
+    padding: 3rem;
+  }
+}
+
+/* For screens smaller than 576px (mobile devices) */
+@media (max-width: 576px) {
+  .purpBg {
+    padding: 3rem;
+  }
+  .blackBg,
+  .ytBg {
+    padding: 2rem;
+  }
+  .mob {
+    display: flex;
+    gap: 1rem;
   }
 }

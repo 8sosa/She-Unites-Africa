@@ -2,11 +2,44 @@ import React from 'react';
 import './About.css';
 import { Button, Container, Row, Col } from 'react-bootstrap';
 import { FaFistRaised, FaUsers, FaBalanceScale, FaHandsHelping } from "react-icons/fa";
-import Partn from '../Images/partn.png'
 import ImpactCarousel from '../Components/impactCarousel';
-import Team from "../Images/team.png";
+import Andrew from "../Images/team/Andrew.jpg";
+import Binta from "../Images/team/Binta.jpg";
+import Chidinma from "../Images/team/Chidinma.jpg";
+import Elizabeth from "../Images/team/Elizabeth.jpg";
+import Jericho from "../Images/team/Jericho.jpg";
+import Meymuna from "../Images/team/Meymuna.JPG";
+import Nduka from "../Images/team/Nduka.jpg";
+import Tendai from "../Images/team/Tendai.jpg";
+import Theresa from "../Images/team/Theresa.jpg";
+import Miriam from "../Images/partners/Miriam.jpg";
+import Suspads from "../Images/partners/Suspads.jpg";
+import Girl from "../Images/partners/Girl.PNG";
+import Ladies from "../Images/partners/Ladies.PNG";
+import Utunyange from "../Images/partners/Utunyange.JPG";
+
 
 export default function About() {
+  const team = [
+    { firstName: "Chidimma", lastName: "Frances Okoye", role:"Co-Founder", src: Chidinma },
+    { firstName: "Nduka-aku", lastName: "Oluchi Rejoice", role:"Rep for SUA Nigeria", src: Nduka },
+    { firstName: "Meymuna", lastName: "Awad Idris", role:"Rep for SUA Ethiopia x Rwanda", src: Meymuna },
+    { firstName: "Binta", lastName: "Badije", role:"Rep for SUA Gambia", src: Binta },
+    { firstName: "Jericho", lastName: "Nyirenda", role:"Rep for Malawi", src: Jericho },
+    { firstName: "Theresa", lastName: "Muparazdi", role:"Rep for SUA Zambia", src: Theresa },
+    { firstName: "Elizabeth", lastName: "Phiri", role:"Deputy rep for SUA Zambia", src: Elizabeth },
+    { firstName: "Andrew", lastName: "Phiri", role:"Volunteer Coordinator", src: Andrew },
+    { firstName: "Tendai", lastName: "Nyakuhwa", role:"Assistant program coordinator", src: Tendai },
+];
+
+const partners = [
+  {src: Girl, alt: "Girl Up Rwanda"},
+  {src: Ladies, alt: "Ladies with Stories"},
+  {src: Utunyange, alt: "Utunyange Initiative"},
+  {src: Miriam, alt: "Miriam Ujunwa Girls Foundation"},
+  {src: Suspads, alt: "Sus Pads"}
+];
+
   return (
     <>
       <div className='homeHero'>
@@ -19,7 +52,7 @@ export default function About() {
         <Container className='abtCardCont'>
           <div className='abtCard'>
             <h1 className='mont'>our mission</h1>
-            <p className='mont'>The mission of Women's Empowerment is to educate and empower females over Africa with the skills and confidence necessary to get a job, maintain a healthy lifestyle,  and be the best version of themselves that they can be.</p>
+            <p className='mont'>Our mission is to educate and empower women all over Africa with the skills and confidence for financial independence, maintain a healthy lifestyle, and be the best version of themselves that they can be.</p>
           </div>
           <div className='abtCard'>
             <h1 className='mont'>our vission</h1>
@@ -30,9 +63,11 @@ export default function About() {
       <div className='abtYtBg1'>
         <Container>
           <h1 className='abtSectionTitle mont'>herstory</h1>
-          <p className='abtSectionText mont'>Sheunitesafrica was founded and established by Miss Anastacia Amarachi Nickson and Miss Chidimma Okoye in 2020. Sheunitesafrica is an organization with special interest in inspiring and motivating females to contribute in transforming the society positively and impacting a positive change. </p>
-          <p className='abtSectionText mont'>After careful consideration in the research that SUA conducts in vulnerable communities, women and girls experience the scourge of poverty in many ways resulting in missing out on school or females being left out on becoming financially secure. Our initiatives support females to have equal opportunities as men and boys.</p>
-          <p className='abtSectionText mont'>Empowering females through our programs means a better life and development of communities, ending poverty, food security, improved health awareness and sustainable development goals, education, meeting the needs and challenges of socially and economically disadvantaged females,and preparing them for personal, career, and economic success. We are dedicated to empowering females to become the very best of themselves.</p>
+          <p className='abtSectionText mont'>Violet Care Foundation for Women and Nature, Powered by SheUnitesAfrica</p>
+          <p className='abtSectionText mont'>Originally founded as SheUnitesAfrica (SUA) in 2020 by Miss Anastacia Amarachi Nickson and Miss Chidimma Frances Okoye, our organization was established with a deep commitment to inspiring and empowering females to contribute to societal transformation and positive change. Due to legal registration requirements, we have now evolved into Violet Care Foundation for Women and Nature, powered by SheUnitesAfrica. While our name has changed, our mission remains unwavering: to create a world where women and girls have equal opportunities to thrive.</p>
+          <p className='abtSectionText mont'>Through careful research and engagement with vulnerable communities, we recognize that women and girls experience the scourge of poverty in ways that limit their education, financial security, and overall well-being. Our initiatives are designed to bridge this gap, ensuring that females can access the same opportunities as men and boys.</p>
+          <p className='abtSectionText mont'>Empowering females through our programs leads to a better quality of life, community development, poverty reduction, food security, improved health awareness, and progress toward sustainable development goals. We are dedicated to meeting the needs of socially and economically disadvantaged females, preparing them for personal, career, and economic success.</p>
+          <p className='abtSectionText mont'>At Violet Care Foundation for Women and Nature, our commitment remains strong: to empower females to become the very best version of themselves, ensuring a future where they can lead, inspire, and create lasting change.</p>
         </Container>
       </div>
       <div className='abtYtBg2'>
@@ -66,17 +101,15 @@ export default function About() {
       <div className='purpBg'>
         <Container className='d-flex flex-column align-items-center'>
           <h1 className='shopTitle mont'>The Team</h1>   
-          <div class="team">
-            <div class="team-item"><img src={Team} alt='our selves'/></div>
-            <div class="team-item"><img src={Team} alt='our selves'/></div>
-            <div class="team-item"><img src={Team} alt='our selves'/></div>
-            <div class="team-item"><img src={Team} alt='our selves'/></div>
-            <div class="team-item"><img src={Team} alt='our selves'/></div>
-            <div class="team-item"><img src={Team} alt='our selves'/></div>
-            <div class="team-item"><img src={Team} alt='our selves'/></div>
-            <div class="team-item"><img src={Team} alt='our selves'/></div>
-            <div class="team-item"><img src={Team} alt='our selves'/></div>
-        </div>
+          <Row className='team'>
+            {team.map((member, index) => (
+              <Col xs={12} className='team-item' key={index}>
+                <img src={member.src} alt={member.firstName} className='teamImg' />
+                <h3 className='teamBody shadow1 mont'>{member.firstName}<span className='bold1'> {member.lastName}</span></h3>
+                <p className='teamBody altMont'>{member.role}</p>
+              </Col>
+            ))}
+          </Row>
         </Container>
       </div>
       <div className='ytBg'>
@@ -90,10 +123,9 @@ export default function About() {
         <Container className='d-flex flex-column align-items-center'>
           <h1 className='shopTitle mont'>partners</h1>   
           <div className='partners'>
-            <img src={Partn} alt='a partner' className='partnerLogo'/>
-            <img src={Partn} alt='a partner' className='partnerLogo'/>
-            <img src={Partn} alt='a partner' className='partnerLogo'/>
-            <img src={Partn} alt='a partner' className='partnerLogo'/>
+            {partners.map((partner, index) => (
+              <img src={partner.src} alt={partner.alt} className='partnerLogo' key={index}/>
+            ))}
           </div>
         </Container>
       </div>
@@ -101,16 +133,20 @@ export default function About() {
         <Container className='diff m-5'>
           <h1 className='mont'>Join Us in Making a Difference</h1>
           <p className='mont'>SHEUNITESAFRICA thrives on the strength and support of our community. Whether you’re looking to volunteer, collaborate, or make a meaningful contribution, there are many ways to get involved. Together, we can empower women and girls across Africa to drive positive change and build a brighter future.</p>
-          <div className='abtCardBox'>
-              <div className='purpCard align-items-center p-5 jcsb'>
+          <Row className='abtCardBox'>
+            <Col>
+              <div className='purpCard tall align-items-center p-5 jcsb'>
                 <p className='cardText mont mt-5 mb-5'>Looking to make an impact? Join our community by volunteering, becoming a partner, or offering your unique skills.</p>
                 <Button className='button'>Get Involved</Button>
               </div>
-              <div className='purpCard align-items-center p-5'>
+            </Col>
+            <Col>
+              <div className='purpCard tall align-items-center p-5'>
                 <p className='cardText mont mt-5 mb-5'>Help us reach more women and girls with the resources they need to succeed. Your contribution directly supports our programs and makes our mission possible.</p>
                 <Button className='button'>Donate Now</Button>
               </div>
-          </div>
+            </Col>
+          </Row>
         </Container>
       </div>
     </>

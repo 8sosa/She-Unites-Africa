@@ -15,6 +15,15 @@ const EventsCarousel = () => {
     autoplay: true,
     autoplaySpeed: 6000,
   };
+  const settingsMob = {
+    dots: false,
+    infinite: true,
+    speed: 5000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 6000,
+  };
 
   const imageItems = [
     EventPic,
@@ -23,19 +32,34 @@ const EventsCarousel = () => {
   ];
 
   return (
-    <div className="EventsCarousel">
-      <Slider {...settings}>
-        {imageItems.map((image, index) => (
-          <div key={index}>
-            <img
-              src={image}
-              alt={`Carousel item ${index + 1}`}
-              className="EventsCarouselPic"
-            />
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <>
+      <div className="EventsCarousel">
+        <Slider {...settings}>
+          {imageItems.map((image, index) => (
+            <div key={index}>
+              <img
+                src={image}
+                alt={`Carousel item ${index + 1}`}
+                className="EventsCarouselPic"
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
+      <div className="EventsCarouselMob">
+        <Slider {...settingsMob}>
+          {imageItems.map((image, index) => (
+            <div key={index}>
+              <img
+                src={image}
+                alt={`Carousel item ${index + 1}`}
+                className="EventsCarouselPic"
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </>
   );
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
-import EventsCarousel from '../Components/EventsCarousel';
+// import EventsCarousel from '../Components/EventsCarousel';
 import Vector1 from '../Images/ballongirl.png';
 import Vector2 from '../Images/capeVec.png';
 import GalleryPic from "../Images/img3.jpg";
@@ -43,7 +43,7 @@ export default function Home() {
                     <Col>
                         <div className='statementCard mont'>
                             <h2 className='statementCardTitle'>Mission</h2>
-                            <p className='statementCardText'>To educate and empower females over Africa with the skills and confidence necessary to get a job, maintain a healthy lifestyle,  and be the best version of themselves that they can be.</p>
+                            <p className='statementCardText'>To educate and empower women all over Africa with the skills and confidence for financial independence, maintain a healthy lifestyle, and be the best version of themselves that they can be.</p>
                         </div>
                     </Col>
                 </Row>
@@ -51,13 +51,13 @@ export default function Home() {
         </div>
         <div className='ytBg'>
             <Container className='d-flex flex-column align-items-center'>
-                <h1 className='purpSectionTitle mont mid'>Upcoming Events</h1>
-                <div className='mob'>
+                {/* <h1 className='purpSectionTitle mont mid'>Upcoming Events</h1>
+                <div className='purpSectionTitle mont mob'>
                     <h1>Upcoming</h1>
                     <h1>Events</h1>
                 </div>
-                <EventsCarousel />
-                <h1 className='homeSectionTitle mont'>Last event gallery</h1>
+                <EventsCarousel /> */}
+                <h1 className='homeSectionTitle mont'>Overview gallery</h1>
                 <div class="gallery">
                     <div class="gallery-item"><img src={GalleryPic} alt='our selves'/></div>
                     <div class="gallery-item"><img src={GalleryPic} alt='our selves'/></div>
@@ -70,7 +70,7 @@ export default function Home() {
                     <div class="gallery-item"><img src={GalleryPic} alt='our selves'/></div>
                 </div>
                 <h1 className='homeSectionTitle mont mb-5'>impact</h1>
-                <Row className='mt-5 mb-5'>
+                <Row className='mt-5 mb-5 gap-5'>
                     <Col>
                         <div className='purpCard'>
                             <h1 className='cardTitle mont'>10,000+ Lives Touched:</h1>
@@ -90,7 +90,7 @@ export default function Home() {
         <div className='donateBg'>
             <Container className='donateCont'>
                 <h1 className='purpSectionTitle mont mid'>Donate to us</h1>
-                <div className='mob'>
+                <div className='purpSectionTitle mont mob black'>
                     <h1>Donate</h1>
                     <h1>to us</h1>
                 </div>
@@ -133,12 +133,20 @@ export default function Home() {
         <div className='purpBg'>
             <Container className='d-flex flex-column align-items-center'>
                 <h1 className='shopTitle mont'>partners</h1>   
-                <div className='partners'>
-                    <img src={Partn} alt='a partner' className='partnerLogo'/>
-                    <img src={Partn} alt='a partner' className='partnerLogo'/>
-                    <img src={Partn} alt='a partner' className='partnerLogo'/>
-                    <img src={Partn} alt='a partner' className='partnerLogo'/>
-                </div>
+                <Row xs={2} sm={6} md={3} className='partners'>
+                    <Col>
+                        <img src={Partn} alt='a partner' className='partnerLogo'/>
+                    </Col>
+                    <Col>
+                        <img src={Partn} alt='a partner' className='partnerLogo'/>
+                    </Col>
+                    <Col>
+                        <img src={Partn} alt='a partner' className='partnerLogo'/>
+                    </Col>
+                    <Col>
+                        <img src={Partn} alt='a partner' className='partnerLogo'/>
+                    </Col>
+                </Row>
             </Container>
         </div>
         <div className='ytBg'>

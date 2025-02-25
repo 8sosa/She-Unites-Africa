@@ -43,14 +43,15 @@
     background-color: #d9d9d9;
     color: #000;
     padding: .5rem 2rem;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 .heroBtn:hover {
     color: #fff;
     background-color: #A76399;
     border: 3px solid #000;
 }
-.ytTitle, .ytText {
+.ytTitle,
+.ytText {
     color: #fff;
 }
 .ytTitle {
@@ -61,7 +62,7 @@
 .ytText {
     font-size: 2rem;
     font-weight: 300;
-    text-align: start;
+    text-align: start !important;
 }
 .statementCardRow {
     margin-top: 5rem;
@@ -144,19 +145,20 @@
     border-radius: 2rem;
     width: 100%;
     height: fit-content;
-    padding: 2rem;
+    padding: 3rem;
 }
 .cardTitle {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 .cardText {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 300;
     max-width: 100%;
 }
-.cardText, .cardTitle {
+.cardText,
+.cardTitle {
     text-align: start;
 }
 .moreLink {
@@ -178,9 +180,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  /*pseudo-element for the overlay */
-  .donateBg::before {
+}
+/* Pseudo-element for the overlay */
+.donateBg::before {
     content: "";
     position: absolute;
     top: 0;
@@ -194,17 +196,18 @@
     filter: grayscale(100%);
     z-index: 1; /* Ensure the overlay is on top */
     opacity: 0.2;
-  }
-  /* Ensure content inside the donateBg is visible */
-  .donateBg > * {
+}
+/* Ensure content inside the donateBg is visible */
+.donateBg > * {
     position: relative;
     z-index: 2; /* Place content above the overlay */
-  }
+}
 .donateCont {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5rem 0rem;
+    color: #000;
 }
 .donateText {
     font-size: 2rem;
@@ -265,7 +268,7 @@
     transform: rotate(270deg);
     font-size: 5rem;
     color: #A76399;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 .partners {
     display: flex;
@@ -274,9 +277,11 @@
     margin-top: 5rem;
 }
 .partners img {
-    min-width: 10rem;
+    width: 100%;
+    max-width: 10rem;
     border: 1px solid #000;
     border-radius: 20px;
+    background-color: #fff;
 }
 Form {
     gap: 2rem;
@@ -297,7 +302,179 @@ Form {
     background-color: #fff;
     width: 40rem;
 }
-.inputField:placeholder-shown, .inputField {
+.inputField:placeholder-shown,
+.inputField {
     font-weight: 500;
     font-size: 1.2rem;
+}
+
+/* ===============================================
+   Responsive Styles
+   =============================================== */
+
+/* For tablets and medium devices */
+@media (max-width: 992px) {
+    .heroTitle {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .homeHeroCont {
+        margin: 5rem 0;
+    }
+    .ytTitle {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .ytText {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .statementCardText {
+        width: 100%;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .homeShop {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* For smaller devices */
+@media (max-width: 768px) {
+    .homeHero {
+        padding: 3rem 1rem;
+        background-position: center center;
+    }
+    .heroTitle {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .homeHeroCont {
+        margin: 3rem 0;
+    }
+    .statementCard {
+        padding: 1.5rem;
+    }
+    .statementCardTitle {
+        font-size: 2rem;
+    }
+    .statementCardText {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+    .ytTitle {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .ytText {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .purpSectionTitle {
+        font-size: 3rem;
+    }
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+    .gallery-item {
+        height: 200px;
+    }
+    .donateCont {
+        margin: 3rem 0;
+    }
+    .donateText {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .shopTitle {
+        font-size: 2.5rem;
+    }
+    .homeShop {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .homeShopItem {
+        max-width: 100%;
+    }
+    .shopSlogan {
+        /* transform: none; Remove rotation on smaller devices */
+        font-size: 3rem;
+    }
+    .partners {
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+    .inputField {
+        width: 100%;
+    }
+    Form {
+        width: 100%;
+    }
+}
+
+/* For very small devices */
+@media (max-width: 576px) {
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+    .heroBtn {
+        font-size: 1.2rem;
+        padding: 0.5rem 1.5rem;
+    }
+    .ytTitle {
+        font-size: 2rem;
+    }
+    .ytText {
+        font-size: 1.3rem;
+    }
+    .statementCard {
+        padding: 1rem;
+    }
+    .statementCardTitle {
+        font-size: 1.8rem;
+    }
+    .statementCardText {
+        font-size: 1.2rem;
+    }
+    .purpSectionTitle {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .gallery-item {
+        height: 150px;
+    }
+    .donateText {
+        font-size: 1.3rem;
+        text-align: start;
+    }
+    .shopTitle {
+        font-size: 2rem;
+    }
+    .homeShop {
+        justify-items: center;
+    }
+    .homeShopItem {
+        max-width: 15rem;
+    }
+    .homeShopItem span {
+        font-size: 1.2rem;
+    }
+    .formButton {
+        width: 8rem;
+        font-size: 0.9rem;
+    }
+    .inputField {
+        width: 100%;
+    }
+    .vectorCol {
+        display: none;
+    }
+    .donateBg{
+        padding: 2rem;
+    }
 }
