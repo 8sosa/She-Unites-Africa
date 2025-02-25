@@ -67,7 +67,6 @@ export default function Business() {
           <h1 className='homeSectionTitle mb-5 tal'>what we offer...</h1>
           <ol>
             <li>Business Training Programs</li>
-            <li>Access to Funding</li>
             <li>Networking Opportunities</li>
             <li>Showcasing Women-Owned Businesses</li>
           </ol>
