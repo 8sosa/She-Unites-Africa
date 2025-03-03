@@ -1,33 +1,33 @@
 import React from 'react'
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './shop.css'
 import { Container } from 'react-bootstrap'
-import { MerchCarousel } from '../Components/MerchCarousel';
-import merchImage from '../Images/merch.jpeg'
+// import { MerchCarousel } from '../Components/MerchCarousel';
+// import merchImage from '../Images/merch.jpeg'
 
 
 export default function Shop() {
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 2000,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 6000,
-  };
+  // const settings = {
+  //   dots: false,
+  //   infinite: false,
+  //   speed: 2000,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   autoplay: false,
+  //   autoplaySpeed: 6000,
+  // };
 
-  const tags = [
-    'Shirts',
-    'Trousers',
-    'Jackets',
-    'Shorts',
-    'Jumpsuits',
-    'Sweaters',
-    'Hats',
-  ]
+  // const tags = [
+  //   'Shirts',
+  //   'Trousers',
+  //   'Jackets',
+  //   'Shorts',
+  //   'Jumpsuits',
+  //   'Sweaters',
+  //   'Hats',
+  // ]
   return (
     <>
       <div className='homeHero'>
@@ -36,7 +36,7 @@ export default function Shop() {
           <h1 className='aboutTitle mont'>she unites africa</h1>
         </Container>
       </div>
-      <div className='blackBg'>
+      {/* <div className='blackBg'>
         <Container className='d-flex flex-column align-items-center'>
           <h1 className='shopTitle mont mb-5'>merch collection</h1>
           <MerchCarousel />
@@ -123,7 +123,7 @@ export default function Shop() {
             </div>
           </div>
         </Container>
-      </div>
+      </div> */}
     </>
   )
 }

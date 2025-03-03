@@ -21,6 +21,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "optimize-images": "npx imagemin 'build/static/media/*.{jpg,png,svg}' --out-dir=build/static/media",
+    "build:optimized": "npm run build && npm run optimize-images",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -44,6 +46,7 @@
   },
   "proxy": "http://localhost:5000",
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "imagemin-cli": "^8.0.0"
   }
 }

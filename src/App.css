@@ -70,6 +70,9 @@ html {
 .black {
   color: #000;
 }
+a {
+  color: #000 !important;
+}
 
 /* ===============================================
    Responsive Styles

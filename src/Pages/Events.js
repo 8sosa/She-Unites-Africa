@@ -3,7 +3,7 @@ import './Events.css'
 import { EventCarousel } from '../Components/EventCarousel'
 import ImpactCarousel from '../Components/impactCarousel';
 import { Button, Container, Row, Col } from 'react-bootstrap';
-import Poster from '../Images/poster.png'
+// import Poster from '../Images/poster.png'
 import Gallery from '../Components/Gallery';
 
 export default function Events() {
@@ -15,7 +15,7 @@ export default function Events() {
           <h1 className='aboutTitle mont'>events</h1>
         </Container>
       </div>
-      <div className='p-5'>
+      {/* <div className='p-5'>
         <Container className='mt-5'>
           <h1 className='eventSectionTitle mont'>highlight</h1>
           <Row className='m-5'>
@@ -29,7 +29,7 @@ export default function Events() {
             </Col>
           </Row>
         </Container>
-      </div>
+      </div> */}
       <div>
         <Container>
           {/* <h1 className='eventSectionTitle mont'>upcoming Events</h1>

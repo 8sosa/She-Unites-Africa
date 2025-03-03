@@ -17,18 +17,19 @@ const ImpactCarousel = () => {
 
   const impactCards = [
     {
-      title: "10,000+ Lives Touched:",
-      text: "Through workshops, mentorship, and outreach programs, we’ve empowered over 10,000 women and girls to reach their full potential."
+      title: "2,000+ Lives Transformed:",
+      text: "Through our workshops, mentorship, and outreach programs, we have empowered over 2,000 young Africans, including 700+ young girls who have received direct mentorship, equipping them with leadership, career, and life skills for a brighter future."
     },
     {
-      title: "10,000+ Lives Touched:",
-      text: "Through workshops, mentorship, and outreach programs, we’ve empowered over 10,000 women and girls to reach their full potential."
+      title: "50+ Skills Training Sessions:",
+      text: "We have organized over 50+ workshops on leadership, digital literacy, entrepreneurship, and advocacy, empowering young women with the tools to succeed."
     },
     {
-      title: "10,000+ Lives Touched:",
-      text: "Through workshops, mentorship, and outreach programs, we’ve empowered over 10,000 women and girls to reach their full potential."
+      title: "20+ Advocacy Campaigns Launched:",
+      text: "From gender equality to girls’ education and menstrual health awareness, our advocacy initiatives have impacted communities and shaped policies."
     }
   ];
+  
 
   return (
     <div className="EventsCarousel">

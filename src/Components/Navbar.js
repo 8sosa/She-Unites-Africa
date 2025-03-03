@@ -5,7 +5,7 @@ import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom';
 import { RiMenu4Line } from "react-icons/ri";
-import { FaXTwitter, FaFacebookF, FaInstagram } from "react-icons/fa6";
+import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa6";
 import Logo from '../Images/Logo.png';
 
 export default function NavBar() {
@@ -17,7 +17,7 @@ export default function NavBar() {
   const navLinks = [
       { to: "/about-us", label: "About", ariaLabel: "About Us" },
     { to: "/Events", label: "Events", ariaLabel: "Events" },
-    { to: "/Merch-shop", label: "Merch Shop", ariaLabel: "Merch Shop" },
+    // { to: "/Merch-shop", label: "Merch Shop", ariaLabel: "Merch Shop" },
     { to: "/Donate-to-us", label: "Donate To Us", ariaLabel: "Donate To Us" },
     { to: "/She-Unites-Business", label: "She Unites Business", ariaLabel: "She Unites Business" },
     { to: "/Collaborations", label: "Collaborations", ariaLabel: "Collaborations" },
@@ -51,9 +51,9 @@ export default function NavBar() {
         <div >
           <RiMenu4Line onClick={handleShow} className="navbarToggle"/>
           <div className='navSocials mid'>
-            <FaFacebookF className='navSocial'/>
-            <FaInstagram className='navSocial'/>
-            <FaXTwitter className='navSocial'/>
+            <a href='https://www.facebook.com/SheunitesAfrica'><FaFacebookF className='navSocial'/></a>
+            <a href= "https://www.instagram.com/sheunitesafrica"><FaInstagram className='navSocial'/></a>
+            <a href="https://www.linkedin.com/in/anastacia-nickson"><FaLinkedinIn className='navSocial'/></a>
           </div>
         </div>
       </Container>
@@ -63,9 +63,9 @@ export default function NavBar() {
         <Offcanvas.Body className="d-flex flex-column align-items-center">
           {renderNavLinks(handleClose)}
           <div className='d-flex flex-row navSocials'>
-            <FaFacebookF className='navSocial'/>
-            <FaInstagram className='navSocial'/>
-            <FaXTwitter className='navSocial'/>
+            <a href='https://www.facebook.com/SheunitesAfrica'><FaFacebookF className='navSocial'/></a>
+            <a href= "https://www.instagram.com/sheunitesafrica"><FaInstagram className='navSocial'/></a>
+            <a href="https://www.linkedin.com/in/anastacia-nickson"><FaLinkedinIn className='navSocial'/></a>
           </div>
         </Offcanvas.Body>
       </Offcanvas>

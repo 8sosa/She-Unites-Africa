@@ -10,12 +10,17 @@ export default function Footer() {
     const navLinks = [
         { to: "/about-us", label: "About", ariaLabel: "About Us" },
         { to: "/Events", label: "Events", ariaLabel: "Events" },
-        { to: "/Merch-shop", label: "Merch Shop", ariaLabel: "Merch Shop" },
+        // { to: "/Merch-shop", label: "Merch Shop", ariaLabel: "Merch Shop" },
         { to: "/Donate-to-us", label: "Donate To Us", ariaLabel: "Donate To Us" },
         { to: "/She-Unites-Business", label: "She Unites Business", ariaLabel: "She Unites Business" },
         { to: "/Collaborations", label: "Collaborations", ariaLabel: "Collaborations" },
         { to: "/Cart", label: "Cart", ariaLabel: "Cart" },
     ];
+    const socialLinks = [
+        {to: "https://www.facebook.com/SheunitesAfrica", label: "Facebook"},
+        {to: "https://www.instagram.com/sheunitesafrica", label: "Instagram"},
+        {to: "https://www.linkedin.com/in/anastacia-nickson", label: "LinkedIn"}
+    ]
 
   return (
     <>
@@ -46,10 +51,9 @@ export default function Footer() {
                     <Col>
                         <ul>
                             <li className='footerLinkHeader'>social media</li>
-                            <li className='footerLinkBody'>Facebook</li>
-                            <li className='footerLinkBody'>Instagram</li>
-                            <li className='footerLinkBody'>Twitter</li>
-                            <li className='footerLinkBody'>LinkedIn</li>
+                            {socialLinks.map(({to, label}, index) => (
+                                <a href={to}><li key={index} className='footerLinkBody'>{label}</li></a>
+                            ))}
                         </ul>
                     </Col>
                 </Row>
