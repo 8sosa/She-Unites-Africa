@@ -2,14 +2,27 @@ import React from 'react';
 import './Home.css';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 // import EventsCarousel from '../Components/EventsCarousel';
+import ImpactCarousel from '../Components/impactCarousel';
 import Vector1 from '../Images/ballongirl.png';
 import Vector2 from '../Images/capeVec.png';
 import GalleryPic from "../Images/img3.jpg";
-import ShirtPic from '../Images/shirt.jpeg';
-import Partn from '../Images/partn.png'
+// import ShirtPic from '../Images/shirt.jpeg';
+import Miriam from "../Images/partners/Miriam.jpg";
+import Suspads from "../Images/partners/Suspads.jpg";
+import Girl from "../Images/partners/Girl.PNG";
+import Ladies from "../Images/partners/Ladies.PNG";
+import Utunyange from "../Images/partners/Utunyange.JPG";
 
 
 export default function Home() {
+    const partners = [
+        {src: Girl, alt: "Girl Up Rwanda"},
+        {src: Ladies, alt: "Ladies with Stories"},
+        {src: Utunyange, alt: "Utunyange Initiative"},
+        {src: Miriam, alt: "Miriam Ujunwa Girls Foundation"},
+        {src: Suspads, alt: "Sus Pads"}
+      ];
+
   return (
     <>
         <div className='homeHero'>
@@ -69,22 +82,11 @@ export default function Home() {
                     <div class="gallery-item"><img src={GalleryPic} alt='our selves'/></div>
                     <div class="gallery-item"><img src={GalleryPic} alt='our selves'/></div>
                 </div>
-                <h1 className='homeSectionTitle mont mb-5'>impact</h1>
-                <Row className='mt-5 mb-5 gap-5'>
-                    <Col>
-                        <div className='purpCard'>
-                            <h1 className='cardTitle mont'>10,000+ Lives Touched:</h1>
-                            <span className='cardText mont'>Through workshops, mentorship, and outreach programs, we’ve empowered over 10,000 women and girls to reach their full potential.</span>
-                        </div>
-                    </Col>
-                    <Col>
-                        <div className='purpCard'>
-                            <h1 className='cardTitle mont'>10,000+ Lives Touched:</h1>
-                            <span className='cardText mont'>Through workshops, mentorship, and outreach programs, we’ve empowered over 10,000 women and girls to reach their full potential.</span>
-                        </div>
-                    </Col>
-                </Row>
-                <span className='moreLink mont mt-5 mb-5'>See More...</span>
+                <Container className='d-flex flex-column align-items-center'>
+                    <h1 className='homeSectionTitle mont mb-5'>impact</h1>
+                    <ImpactCarousel />
+                    {/* <span className='moreLink mont mt-5 mb-5'>See More...</span> */}
+                </Container>
             </Container>
         </div>
         <div className='donateBg'>
@@ -98,7 +100,7 @@ export default function Home() {
                 <Button className='heroBtn mont'>Empower Now</Button>
             </Container>
         </div>
-        <div className='blackBg'>
+        {/* <div className='blackBg'>
             <Container className='d-flex flex-column align-items-center'>
                 <h1 className='shopTitle mont'>merch collection</h1>
                 <Row>
@@ -129,24 +131,15 @@ export default function Home() {
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </div> */}
         <div className='purpBg'>
             <Container className='d-flex flex-column align-items-center'>
-                <h1 className='shopTitle mont'>partners</h1>   
-                <Row xs={2} sm={6} md={3} className='partners'>
-                    <Col>
-                        <img src={Partn} alt='a partner' className='partnerLogo'/>
-                    </Col>
-                    <Col>
-                        <img src={Partn} alt='a partner' className='partnerLogo'/>
-                    </Col>
-                    <Col>
-                        <img src={Partn} alt='a partner' className='partnerLogo'/>
-                    </Col>
-                    <Col>
-                        <img src={Partn} alt='a partner' className='partnerLogo'/>
-                    </Col>
-                </Row>
+            <h1 className='shopTitle mont'>partners</h1>   
+            <div className='partners'>
+                {partners.map((partner, index) => (
+                <img src={partner.src} alt={partner.alt} className='partnerLogo' key={index}/>
+                ))}
+            </div>
             </Container>
         </div>
         <div className='ytBg'>

@@ -1,10 +1,21 @@
 import React from 'react';
 import './Collaborations.css';
 import { Col, Container, Row } from 'react-bootstrap';
-import Partn from '../Images/partn.png'
-
+import Miriam from "../Images/partners/Miriam.jpg";
+import Suspads from "../Images/partners/Suspads.jpg";
+import Girl from "../Images/partners/Girl.PNG";
+import Ladies from "../Images/partners/Ladies.PNG";
+import Utunyange from "../Images/partners/Utunyange.JPG";
 
 export default function Collaborations() {
+  const partners = [
+    {src: Girl, alt: "Girl Up Rwanda"},
+    {src: Ladies, alt: "Ladies with Stories"},
+    {src: Utunyange, alt: "Utunyange Initiative"},
+    {src: Miriam, alt: "Miriam Ujunwa Girls Foundation"},
+    {src: Suspads, alt: "Sus Pads"}
+  ];
+
   return (
     <>
       <div className='homeHero mont'>
@@ -59,16 +70,15 @@ export default function Collaborations() {
         </Container>
       </div>
       <div className='abtYtBg2'>
-            <Container className='d-flex flex-column align-items-center'>
-                <h1 className='shopTitle mont purp'>partners</h1>   
-                <div className='partners'>
-                    <img src={Partn} alt='a partner' className='partnerLogo'/>
-                    <img src={Partn} alt='a partner' className='partnerLogo'/>
-                    <img src={Partn} alt='a partner' className='partnerLogo'/>
-                    <img src={Partn} alt='a partner' className='partnerLogo'/>
-                </div>
-            </Container>
-        </div>
+        <Container className='d-flex flex-column align-items-center'>
+          <h1 className='shopTitle mont'>partners</h1>   
+          <div className='partners'>
+              {partners.map((partner, index) => (
+              <img src={partner.src} alt={partner.alt} className='partnerLogo' key={index}/>
+              ))}
+          </div>
+        </Container>
+      </div>
         <div className='lytPurpBg p-5'>
           <Container className='lytPurpBgCont mont align-items-center'>
             <h1>Let’s work together to create sustainable impact. Partner with us to empower women and girls and transform communities across Africa.</h1>

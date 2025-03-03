@@ -26,7 +26,7 @@ ul {
     color: #fff;
 }
 .footerLink {
-    color: #fff;
+    color: #fff !important;
 }
 .footerLink:hover, .footerLink.active {
     text-decoration: underline;

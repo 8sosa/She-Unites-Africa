@@ -34,7 +34,7 @@ export default function Events() {
         <Container>
           {/* <h1 className='eventSectionTitle mont'>upcoming Events</h1>
           <EventCarousel /> */}
-          <h1 className='eventSectionTitle mont'>past Events</h1>
+          <h1 className='eventSectionTitle mont mt-5'>past Events</h1>
           <EventCarousel />
         </Container>
       </div>
