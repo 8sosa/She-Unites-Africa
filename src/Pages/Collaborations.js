@@ -40,7 +40,6 @@ export default function Collaborations() {
       <div className='lytPurpBg p-5'>
         <Container className='lytPurpBgCont mont'>
           <h1 className='tal'>How We Collaborate</h1>
-          <p className='tal'>The mission of Women's Empowerment is to educate and empower females over Africa with the skills and confidence necessary to get a job, maintain a healthy lifestyle,  and be the best version of themselves that they can be.</p>
           <Row className='abtCardBox p-5'>
             <Col>
               <div className='ytCard tall align-items-start p-5 jcsb'>
@@ -71,7 +70,7 @@ export default function Collaborations() {
       </div>
       <div className='abtYtBg2'>
         <Container className='d-flex flex-column align-items-center'>
-          <h1 className='shopTitle mont'>partners</h1>   
+          <h1 className='shopTitle purp mont'>partners</h1>   
           <div className='partners'>
               {partners.map((partner, index) => (
               <img src={partner.src} alt={partner.alt} className='partnerLogo' key={index}/>

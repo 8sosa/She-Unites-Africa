@@ -21,7 +21,7 @@ export default function NavBar() {
     { to: "/Donate-to-us", label: "Donate To Us", ariaLabel: "Donate To Us" },
     { to: "/She-Unites-Business", label: "She Unites Business", ariaLabel: "She Unites Business" },
     { to: "/Collaborations", label: "Collaborations", ariaLabel: "Collaborations" },
-    { to: "/Cart", label: "Cart", ariaLabel: "Cart" },
+    // { to: "/Cart", label: "Cart", ariaLabel: "Cart" },
   ];
 
   const renderNavLinks = (onClick = () => {}) =>

@@ -25,7 +25,7 @@ export default function Donate() {
       <div className='abtYtBg2 p-5'>
         <Container className='abtYtBg2Cont mont'>
           <h1 className='homeSectionTitle tal mb-5'>Why donate?</h1>
-          <p className='tal mb-5'>The mission of Women's Empowerment is to educate and empower females over Africa with the skills and confidence necessary to get a job, maintain a healthy lifestyle,  and be the best version of themselves that they can be.</p>
+          <p className='tal mb-5'>At Violet care foundation powered by SheUnitesAfrica, we believe that empowered women and girls are the foundation of a thriving society. Every donation you make helps us create opportunities for young African girls to access mentorship, education, and essential life skills.</p>
           <h1 className='homeSectionTitle mb-5 tal'>we’ve achieved...</h1>
           <Row className='abtCardBox p-5'>
             <Col>

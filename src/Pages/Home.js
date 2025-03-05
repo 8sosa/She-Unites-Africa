@@ -5,7 +5,7 @@ import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import ImpactCarousel from '../Components/impactCarousel';
 import Vector1 from '../Images/ballongirl.png';
 import Vector2 from '../Images/capeVec.png';
-import GalleryPic from "../Images/img3.jpg";
+import Gallery from '../Components/Gallery';
 // import ShirtPic from '../Images/shirt.jpeg';
 import Miriam from "../Images/partners/Miriam.jpg";
 import Suspads from "../Images/partners/Suspads.jpg";
@@ -71,16 +71,8 @@ export default function Home() {
                 </div>
                 <EventsCarousel /> */}
                 <h1 className='homeSectionTitle mont'>Overview gallery</h1>
-                <div class="gallery">
-                    <div class="gallery-item"><img src={GalleryPic} alt='our selves'/></div>
-                    <div class="gallery-item"><img src={GalleryPic} alt='our selves'/></div>
-                    <div class="gallery-item"><img src={GalleryPic} alt='our selves'/></div>
-                    <div class="gallery-item"><img src={GalleryPic} alt='our selves'/></div>
-                    <div class="gallery-item"><img src={GalleryPic} alt='our selves'/></div>
-                    <div class="gallery-item"><img src={GalleryPic} alt='our selves'/></div>
-                    <div class="gallery-item"><img src={GalleryPic} alt='our selves'/></div>
-                    <div class="gallery-item"><img src={GalleryPic} alt='our selves'/></div>
-                    <div class="gallery-item"><img src={GalleryPic} alt='our selves'/></div>
+                <div>
+                    <Gallery />
                 </div>
                 <Container className='d-flex flex-column align-items-center'>
                     <h1 className='homeSectionTitle mont mb-5'>impact</h1>

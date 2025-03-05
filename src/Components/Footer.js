@@ -14,7 +14,7 @@ export default function Footer() {
         { to: "/Donate-to-us", label: "Donate To Us", ariaLabel: "Donate To Us" },
         { to: "/She-Unites-Business", label: "She Unites Business", ariaLabel: "She Unites Business" },
         { to: "/Collaborations", label: "Collaborations", ariaLabel: "Collaborations" },
-        { to: "/Cart", label: "Cart", ariaLabel: "Cart" },
+        // { to: "/Cart", label: "Cart", ariaLabel: "Cart" },
     ];
     const socialLinks = [
         {to: "https://www.facebook.com/SheunitesAfrica", label: "Facebook"},
