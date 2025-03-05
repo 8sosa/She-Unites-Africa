@@ -58,7 +58,7 @@ export default function Footer() {
                     </Col>
                 </Row>
                 <Row className='bottomFooter'>
-                    <Col xs={9} className='d-flex'><p>© 2024 SHEUNITESAFRICA</p></Col>
+                    <Col xs={9} className='d-flex justify-content-center'><p>© 2024 SHEUNITESAFRICA</p></Col>
                     <Col className='policy'>
                         <p>Privacy Policy</p>
                         <p>Terms of Service</p>

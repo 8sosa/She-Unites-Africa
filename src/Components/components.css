@@ -11,13 +11,15 @@
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
-    margin: 3rem;
+    margin: 3rem auto;
 }
+
 .testimonial-header {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
 }
+
 .testimonial-avatar {
     width: 6.25rem;
     height: 6.25rem;
@@ -25,22 +27,26 @@
     background-color: #fff;
     margin-right: 20px;
 }
+
 .testimonial-header-text {
     flex: 1;
     text-align: end;
 }
+
 .testimonial-title {
     font-size: 2rem;
     font-weight: 300;
     margin: 0;
     color: #fff;
 }
+
 .testimonial-tag {
     font-size: 2.1rem;
     font-weight: 500;
     margin: 0;
     color: #fff;
 }
+
 .testiText {
     font-size: 1.2rem;
     font-weight: 300;
@@ -52,6 +58,8 @@
     border: 3px solid #A76399;
     border-radius: 20px;
 }
+
+/* Modal body styling */
 .modalBody {
     max-width: 100%;
     width: fit-content;
@@ -60,11 +68,104 @@
     display: flex;
     flex-direction: column;
 }
+
 .modalBody p {
     font-size: 1.2rem;
     font-weight: 300;
 }
+
 .modalBody img {
     border: 1px solid #000;
     border-radius: 1rem;
+}
+
+/* ===============================================
+   Responsive Styles
+   =============================================== */
+
+/* For tablets and medium devices */
+@media (max-width: 992px) {
+    .TestimonialCard {
+        width: 40rem !important;
+        margin: 2rem auto;
+    }
+    .testimonial-title {
+        font-size: 1.8rem;
+    }
+    .testimonial-tag {
+        font-size: 1.8rem;
+    }
+    .testiText {
+        font-size: 1.1rem;
+    }
+}
+
+/* For smaller devices */
+@media (max-width: 768px) {
+    .TestimonialCard {
+        width: 90% !important;
+        margin: 1.5rem auto;
+        padding: 1.5rem;
+    }
+    .testimonial-avatar {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 15px;
+    }
+    .testimonial-title {
+        font-size: 1.6rem;
+    }
+    .testimonial-tag {
+        font-size: 1.6rem;
+    }
+    .testiText {
+        font-size: 1rem;
+    }
+    .modal-content {
+        width: 90%;
+    }
+    .modalBody {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+    .modalBody p {
+        font-size: 1rem;
+    }
+    .modalBody img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* For very small devices */
+@media (max-width: 576px) {
+    .TestimonialCard {
+        width: 95% !important;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+    .testimonial-avatar {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-right: 10px;
+    }
+    .testimonial-title {
+        font-size: 1.4rem;
+    }
+    .testimonial-tag {
+        font-size: 1.4rem;
+    }
+    .testiText {
+        font-size: 0.9rem;
+    }
+    .modal-content {
+        width: 95%;
+    }
+    .modalBody {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .modalBody p {
+        font-size: 0.9rem;
+    }
 }

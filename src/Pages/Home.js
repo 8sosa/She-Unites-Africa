@@ -5,7 +5,7 @@ import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import ImpactCarousel from '../Components/impactCarousel';
 import Vector1 from '../Images/ballongirl.png';
 import Vector2 from '../Images/capeVec.png';
-import Gallery from '../Components/Gallery';
+import OverviewGallery from '../Components/OverviewGallery';
 // import ShirtPic from '../Images/shirt.jpeg';
 import Miriam from "../Images/partners/Miriam.jpg";
 import Suspads from "../Images/partners/Suspads.jpg";
@@ -70,9 +70,8 @@ export default function Home() {
                     <h1>Events</h1>
                 </div>
                 <EventsCarousel /> */}
-                <h1 className='homeSectionTitle mont'>Overview gallery</h1>
                 <div>
-                    <Gallery />
+                    <OverviewGallery />
                 </div>
                 <Container className='d-flex flex-column align-items-center'>
                     <h1 className='homeSectionTitle mont mb-5'>impact</h1>
@@ -135,7 +134,7 @@ export default function Home() {
             </Container>
         </div>
         <div className='ytBg'>
-            <Container className='d-flex flex-column align-items-center m-5'>
+            <Container className='d-flex flex-column align-items-center'>
                 <div className='purpCard align-items-center p-5'>
                     <h1 className='shopTitle mont'>newsletter</h1>
                     <p className='cardText mont mt-5 mb-5'>Join our newsletter to stay updated on all our events and latest happenings, we promise not to spam you.</p>

@@ -1,17 +1,17 @@
-import React, {useState} from 'react'
-import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap';
 import ImpactCarousel from '../Components/impactCarousel';
 import { FaFistRaised, FaUsers, FaHandsHelping } from "react-icons/fa";
 
 
 export default function Donate() {
-  const [activeDonation, setActiveDonation] = useState("");
-  const [donationAmount, setDonationAmount] = useState(""); // State for active donation
+  // const [activeDonation, setActiveDonation] = useState("");
+  // const [donationAmount, setDonationAmount] = useState(""); // State for active donation
 
-  const handleDonationClick = (amount) => {
-    setActiveDonation(amount);
-    setDonationAmount(amount);
-  };
+  // const handleDonationClick = (amount) => {
+  //   setActiveDonation(amount);
+  //   setDonationAmount(amount);
+  // };
 
   return (
     <>
@@ -27,27 +27,27 @@ export default function Donate() {
           <h1 className='homeSectionTitle tal mb-5'>Why donate?</h1>
           <p className='tal mb-5'>At Violet care foundation powered by SheUnitesAfrica, we believe that empowered women and girls are the foundation of a thriving society. Every donation you make helps us create opportunities for young African girls to access mentorship, education, and essential life skills.</p>
           <h1 className='homeSectionTitle mb-5 tal'>we’ve achieved...</h1>
-          <Row className='abtCardBox p-5'>
+          <Row className='abtCardBox'>
             <Col>
-              <div className='purpCard tall align-items-start p-5 jcsb'>
+              <div className='purpCard tall align-items-start jcsb'>
                 <h1 className='tal'>Sponsorships</h1>
                 <p className='tal'>Support our events, programs, or initiatives through financial or in-kind sponsorships that directly impact the lives of women and girls.</p>
               </div>
             </Col>
             <Col>
-              <div className='purpCard tall align-items-center p-5 jcsb'>
+              <div className='purpCard tall align-items-center jcsb'>
                 <h1 className='tal'>Skill-Sharing Programs</h1>
                 <p className='tal'>Offer your expertise through workshops, mentorship, or training sessions that equip women and girls with practical skills for personal and professional growth.</p>
               </div>
             </Col>
             <Col>
-              <div className='purpCard tall align-items-center p-5 jcsb'>
+              <div className='purpCard tall align-items-center jcsb'>
                 <h1 className='tal'>Joint Initiatives</h1>
                 <p className='tal'>Co-create programs or campaigns that align with your organization’s goals and our mission, leveraging mutual strengths to achieve shared objectives.</p>
               </div>
             </Col>
             <Col>
-              <div className='purpCard tall align-items-center p-5 jcsb'>
+              <div className='purpCard tall align-items-center jcsb'>
                 <h1 className='tal'>Product Partnerships</h1>
                 <p className='tal'>Collaborate with us to develop co-branded merchandise or services that benefit both parties while contributing to our initiatives.</p>
               </div>
@@ -55,7 +55,7 @@ export default function Donate() {
           </Row>
         </Container>
       </div>
-      <div className='lytPurpBg p-5'>
+      {/* <div className='lytPurpBg p-5'>
         <Container className='lytPurpBgCont p-5 d-flex justify-content-center align-items-center'>
           <Form>
             <div className='d-flex justify-content-center mb-4'>
@@ -98,7 +98,7 @@ export default function Donate() {
             </div>
           </Form>
         </Container>
-      </div>
+      </div> */}
       <div className='ytBg'>
         <Container className='d-flex flex-column align-items-center'>
           <h1 className='homeSectionTitle mont mb-5'>impact</h1>

@@ -1,23 +1,36 @@
 .navbarContainer {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem; /* Add horizontal padding */
 }
-.navbarToggle {
-    display: none;
+
+.suaLogo {
+    width: 20rem; /* Default logo size */
 }
+
 .navLinks {
     display: flex;
     flex-direction: row;
     gap: 1.2rem;
 }
+
+.navbarToggle {
+    display: none;
+    cursor: pointer;
+}
+
 .navLink {
     font-size: 1rem;
     text-transform: uppercase;
+    transition: color 0.3s ease;
 }
-.navLink:hover, .navLink.active {
+
+.navLink:hover,
+.navLink.active {
     color: #A76399;
 }
+
 .navSocials {
     display: flex;
     flex-direction: row;
@@ -25,18 +38,27 @@
     font-size: 1.5rem;
     margin-left: 2rem;
 }
+
 .navSocial:hover {
     color: #A76399;
 }
 
-@media (max-width: 48rem) {
+/* ===============================================
+   Responsive Styles
+   =============================================== */
 
-}
+/* For devices with max-width 48rem (~768px) */
 @media (max-width: 48rem) {
     .navbarToggle {
         display: flex;
     }
     .navLinks {
         display: none;
+    }
+    .suaLogo {
+        width: 5rem;
+    }
+    .navbarContainer {
+        padding: 0 1rem;
     }
 }

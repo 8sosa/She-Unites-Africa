@@ -24,54 +24,43 @@ export const EventCarousel = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 6000,
-      };
-    
-      const eventItems = [
-        {
-            image: A,
-        },
-        {
-            image: B,
-        },
-        {
-            image: C,
-        },
-        {
-            image: D,
-        },
-        {
-            image: E,
-        },
-        {
-            image: F,
-        },
-        {
-            image: G,
-        },
-        {
-            image: H,
-        },
-        {
-            image: I,
-        },
-        {
-            image: J,
-        } 
-      ];
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
+    };
 
-  return (
-    <div className="EventsCarousel">
-      <Slider {...settings}>
-        {eventItems.map((event, index) => (
-           <div className="image-container" key={index}>
-                <img src={event.image} alt="Sample Event"/>
-                {/* <div className="overlay-text mont purp">
-                    <h1>{event.title}</h1>
-                    <p>{event.date}</p>
-                </div> */}
-            </div>
-        ))}
-      </Slider>
-    </div>
-  )
+    const eventItems = [
+        { image: A },
+        { image: B },
+        { image: C },
+        { image: D },
+        { image: E },
+        { image: F },
+        { image: G },
+        { image: H },
+        { image: I },
+        { image: J }
+    ];
+
+    return (
+        <div className="EventsCarousel">
+            <Slider {...settings}>
+                {eventItems.map((event, index) => (
+                    <div className="image-container" key={index}>
+                        <img src={event.image} alt="Sample Event" />
+                        {/* Optional overlay text */}
+                        {/* <div className="overlay-text mont purp">
+                            <h1>{event.title}</h1>
+                            <p>{event.date}</p>
+                        </div> */}
+                    </div>
+                ))}
+            </Slider>
+        </div>
+    )
 }

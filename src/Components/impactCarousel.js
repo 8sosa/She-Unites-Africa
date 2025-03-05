@@ -13,6 +13,14 @@ const ImpactCarousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 6000,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   };
 
   const impactCards = [

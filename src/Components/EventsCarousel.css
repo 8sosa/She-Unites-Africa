@@ -11,12 +11,6 @@
     margin: auto;
     margin-bottom: 5rem;
 }
-.EventsCarouselMob {
-    display: none;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 5rem;
-}
 
 .EventsCarouselPic {
     margin: 0.5rem;
@@ -62,12 +56,6 @@
 
 /* For very small devices */
 @media (max-width: 576px) {
-    .EventsCarousel {
-        display: none;
-    }
-    .EventsCarouselMob {
-        display: block;
-    }
     .EventsCarouselPic {
         max-width: 20rem; /* Smallest image size on mobile */
         width: 100%;

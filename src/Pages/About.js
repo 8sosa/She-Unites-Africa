@@ -129,20 +129,20 @@ const partners = [
           </div>
         </Container>
       </div>
-      <div className='p-5'>
-        <Container className='diff m-5'>
+      <div className='ytBg'>
+        <Container className='diff'>
           <h1 className='mont'>Join Us in Making a Difference</h1>
           <p className='mont'>SHEUNITESAFRICA thrives on the strength and support of our community. Whether you’re looking to volunteer, collaborate, or make a meaningful contribution, there are many ways to get involved. Together, we can empower women and girls across Africa to drive positive change and build a brighter future.</p>
           <Row className='abtCardBox'>
             <Col>
-              <div className='purpCard tall align-items-center p-5 jcsb'>
-                <p className='cardText mont mt-5 mb-5'>Looking to make an impact? Join our community by volunteering, becoming a partner, or offering your unique skills.</p>
+              <div className='purpCard tall align-items-center jcsb'>
+                <p className='cardText mont mb-5'>Looking to make an impact? Join our community by volunteering, becoming a partner, or offering your unique skills.</p>
                 <Button className='button'>Get Involved</Button>
               </div>
             </Col>
             <Col>
-              <div className='purpCard tall align-items-center p-5'>
-                <p className='cardText mont mt-5 mb-5'>Help us reach more women and girls with the resources they need to succeed. Your contribution directly supports our programs and makes our mission possible.</p>
+              <div className='purpCard tall align-items-center'>
+                <p className='cardText mont mb-5'>Help us reach more women and girls with the resources they need to succeed. Your contribution directly supports our programs and makes our mission possible.</p>
                 <Button className='button'>Donate Now</Button>
               </div>
             </Col>

@@ -20,21 +20,18 @@ export default function Business() {
       tag: 'We are farmers and we farm. Do you want to farm, also?',
       description: 'This farming venture has transformed the lives of women by providing them with sustainable income opportunities and fostering economic independence. Through training programs and access to resources, women have gained valuable agricultural skills, enabling them to increase crop yields and improve food security for their families. The venture has also created a supportive community where women collaborate, share knowledge, and inspire each other, ultimately empowering them to take on leadership roles and contribute meaningfully to their households and society.',
       pic1: EventPic,
-      pic2: EventPic
     },
     {
       business: 'Coding',
       tag: 'We are coders and we code. Do you want to code, also?',
       description: 'This farming venture has transformed the lives of women by providing them with sustainable income opportunities and fostering economic independence. Through training programs and access to resources, women have gained valuable agricultural skills, enabling them to increase crop yields and improve food security for their families. The venture has also created a supportive community where women collaborate, share knowledge, and inspire each other, ultimately empowering them to take on leadership roles and contribute meaningfully to their households and society.',
       pic1: EventPic,
-      pic2: EventPic
     },
     {
       business: 'Dressing',
       tag: 'We are dressers and we dress. Do you want to dress, also?',
       description: 'This farming venture has transformed the lives of women by providing them with sustainable income opportunities and fostering economic independence. Through training programs and access to resources, women have gained valuable agricultural skills, enabling them to increase crop yields and improve food security for their families. The venture has also created a supportive community where women collaborate, share knowledge, and inspire each other, ultimately empowering them to take on leadership roles and contribute meaningfully to their households and society.',
       pic1: EventPic,
-      pic2: EventPic
     },
   ];
 
@@ -47,7 +44,6 @@ export default function Business() {
         <Modal.Body className='modalBody'>
           <div className='d-flex flex-row gap-3'>
             <img src={modalContent.pic1} alt='first activity'/>
-            <img src={modalContent.pic2} alt='second activity'/>
           </div>
           <p>{modalContent.description}</p>
         </Modal.Body>
@@ -83,7 +79,7 @@ export default function Business() {
       <div className='lytPurpBg p-5'>
         <Container className='lytPurpBgCont mont'>
           <h1 className='tal'>How to Get Involved</h1>
-          <div className='d-flex gap-5'>
+          <div className='htgi'>
               <div className='ytCard align-items-start p-5 jcsb'>
                 <h1 className='tal'>Entrepreneurs</h1>
                 <p className='tal'>Are you a woman with a business idea or an existing venture? Join our programs to gain the skills, funding, and network you need to take your business to the next level.</p>
@@ -95,7 +91,7 @@ export default function Business() {
           </div>
         </Container>
       </div>
-      <div className='abtYtBg2 p-5'>
+      <div className='abtYtBg2 p-1'>
         <Container className='abtYtBg2Cont mont'>
           <h1 className='homeSectionTitle mb-5 tal'>Success Stories</h1>
           <p className='tal mb-5'>From Startups to Sustainable Enterprises: Meet women whose lives and businesses have been transformed through our programs. Read inspiring testimonials about resilience, growth, and community impact.</p>

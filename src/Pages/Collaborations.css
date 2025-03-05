@@ -181,3 +181,114 @@ Form Button {
     font-weight: 300;
     padding-bottom: 0rem;
 }
+
+/* ===============================================
+   Responsive Styles
+   =============================================== */
+
+/* For tablets and medium devices (max-width: 992px) */
+@media (max-width: 992px) {
+    .lytPurpBg {
+        padding: 4rem;
+    }
+    .lytPurpBgCont h1 {
+        font-size: 2.5rem;
+    }
+    .lytPurpBgCont p {
+        font-size: 1.3rem;
+    }
+    .colSectionTitle {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .colSectionText {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .abtYtBg2Cont {
+        padding: 3rem;
+    }
+    .abtYtBg2Cont h1 {
+        font-size: 2rem;
+    }
+    .abtYtBg2Cont p,
+    .abtYtBg2Cont li {
+        font-size: 1.3rem;
+    }
+    .ytCard {
+        padding: 1.5rem;
+        width: 90%;
+    }
+}
+
+/* For smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .lytPurpBg {
+        padding: 3rem;
+    }
+    .lytPurpBgCont h1 {
+        font-size: 2.2rem;
+    }
+    .lytPurpBgCont p {
+        font-size: 1.2rem;
+    }
+    .colSectionTitle {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .colSectionText {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .abtYtBg2Cont {
+        padding: 2rem;
+    }
+    .abtYtBg2Cont h1 {
+        font-size: 1.8rem;
+    }
+    .abtYtBg2Cont p,
+    .abtYtBg2Cont li {
+        font-size: 1.2rem;
+    }
+    .ytCard {
+        padding: 1rem;
+        width: 100%;
+    }
+}
+
+/* For very small devices (max-width: 576px) */
+@media (max-width: 576px) {
+    .lytPurpBg {
+        padding: 2rem;
+    }
+    .lytPurpBgCont h1 {
+        font-size: 1.5rem;
+    }
+    .lytPurpBgCont p {
+        font-size: 1rem;
+    }
+    .colSectionTitle {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .colSectionText {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .abtYtBg2Cont {
+        padding: 1rem;
+    }
+    .abtYtBg2Cont h1 {
+        font-size: 1.5rem;
+    }
+    .abtYtBg2Cont p,
+    .abtYtBg2Cont li {
+        font-size: 1rem;
+        padding-bottom: 0rem;
+        margin-bottom: 0rem;
+    }
+    .ytCard {
+        padding: 0.5rem;
+        width: 100%;
+    }
+}

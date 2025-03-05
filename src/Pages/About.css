@@ -3,6 +3,8 @@
     font-weight: 300;
     text-transform: uppercase;
 }
+
+/* Existing styles */
 .abtCardCont {
     gap: 10rem;
     display: flex;
@@ -54,7 +56,7 @@
     border: 3px solid #000 !important;
     border-radius: 2rem !important;
     width: fit-content;
-    padding: .5rem 4rem !important;
+    padding: 0.5rem 4rem !important;
     background-color: #fff !important;
     color: #000 !important;
     font-size: 1.5rem !important;
@@ -104,8 +106,8 @@
 .team {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    gap: 1rem; /* Space between items */
-    margin: 5rem 0rem;
+    gap: 1rem;
+    margin: 5rem 0;
     width: 100%;
 }
 .team-item {
@@ -124,4 +126,110 @@
     height: 100%;
     object-fit: contain;
     margin-bottom: 1rem;
+}
+.htgi {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+/* ===============================================
+   Responsive Styles
+   =============================================== */
+
+/* For tablets and medium devices */
+@media (max-width: 992px) {
+    .aboutTitle {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .abtCardCont {
+        flex-direction: column;
+        gap: 5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .abtCard {
+        padding: 2rem;
+    }
+    .abtCard h1 {
+        font-size: 2.5rem;
+    }
+    .abtCard p {
+        font-size: 1.3rem;
+    }
+    .abtSectionHeader{
+        font-size: 2rem;
+    }
+    .abtSectionTitle {
+        font-size: 3rem;
+        padding-left: 1rem;
+        margin-bottom: 3rem;
+    }
+    .abtSectionText {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .htgi {
+        gap: 2rem;
+    }
+}
+
+/* For smaller devices */
+@media (max-width: 768px) {
+    .abtSectionText {
+        font-size: 1.3rem;
+    }
+    .abtIcon {
+        font-size: 5rem;
+    }
+    .diff h1 {
+        font-size: 3rem;
+    }
+    .diff p {
+        font-size: 1.3rem;
+    }
+    .htgi {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+/* For very small devices */
+@media (max-width: 576px) {
+    .aboutTitle {
+        font-size: 2rem;
+    }
+    .abtCard h1 {
+        font-size: 2rem;
+    }
+    .abtCard p {
+        font-size: 1.2rem;
+    }
+    .abtSectionHeader{
+        font-size: 1.5rem;
+    }
+    .abtSectionTitle {
+        font-size: 2.5rem;
+        padding-left: 0.5rem;
+    }
+    .abtSectionText {
+        font-size: 1rem;
+    }
+    .team {
+        grid-template-columns: 1fr;
+    }
+    .diff h1 {
+        font-size: 2rem;
+    }
+    .diff p {
+        font-size: 1rem;
+    }
+    .button {
+        padding: 0.5rem 2rem !important;
+        text-wrap: wrap;
+        font-size: 1rem !important;
+    }
 }
