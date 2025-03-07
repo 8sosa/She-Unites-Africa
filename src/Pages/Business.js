@@ -33,6 +33,12 @@ export default function Business() {
       description: 'This farming venture has transformed the lives of women by providing them with sustainable income opportunities and fostering economic independence. Through training programs and access to resources, women have gained valuable agricultural skills, enabling them to increase crop yields and improve food security for their families. The venture has also created a supportive community where women collaborate, share knowledge, and inspire each other, ultimately empowering them to take on leadership roles and contribute meaningfully to their households and society.',
       pic1: EventPic,
     },
+    {
+      business: 'We Write',
+      tag: 'We are writers and we write. Do you want to write, also?',
+      description: 'This farming venture has transformed the lives of women by providing them with sustainable income opportunities and fostering economic independence. Through training programs and access to resources, women have gained valuable agricultural skills, enabling them to increase crop yields and improve food security for their families. The venture has also created a supportive community where women collaborate, share knowledge, and inspire each other, ultimately empowering them to take on leadership roles and contribute meaningfully to their households and society.',
+      pic1: EventPic,
+    },
   ];
 
   return (

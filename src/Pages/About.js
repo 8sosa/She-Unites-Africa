@@ -5,6 +5,8 @@ import { FaFistRaised, FaUsers, FaBalanceScale, FaHandsHelping } from "react-ico
 import ImpactCarousel from '../Components/impactCarousel';
 import Andrew from "../Images/team/Andrew.jpg";
 import Binta from "../Images/team/Binta.jpg";
+import Von from "../Images/team/Von.jpg";
+import Ana from "../Images/team/Ana.png";
 import Chidinma from "../Images/team/Chidinma.jpg";
 import Elizabeth from "../Images/team/Elizabeth.jpg";
 import Jericho from "../Images/team/Jericho.jpg";
@@ -21,7 +23,9 @@ import Utunyange from "../Images/partners/Utunyange.JPG";
 
 export default function About() {
   const team = [
+    { firstName: "Anastacia", lastName: "Amarachi Nickson", role:"Founder", src: Ana },
     { firstName: "Chidimma", lastName: "Frances Okoye", role:"Co-Founder", src: Chidinma },
+    { firstName: "Yvonne", lastName: "Amaria", role:"Development Director", src: Von },
     { firstName: "Nduka-aku", lastName: "Oluchi Rejoice", role:"Rep for SUA Nigeria", src: Nduka },
     { firstName: "Meymuna", lastName: "Awad Idris", role:"Rep for SUA Ethiopia x Rwanda", src: Meymuna },
     { firstName: "Binta", lastName: "Badije", role:"Rep for SUA Gambia", src: Binta },
