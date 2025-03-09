@@ -8,6 +8,7 @@ import Business from './Pages/Business'
 import Cart from './Pages/Cart'
 import Collaborations from './Pages/Collaborations'
 import Donate from './Pages/Donate'
+import Ver from './Pages/VerifyDonation'
 import Events from './Pages/Events'
 import Shop from './Pages/Shop'
 import Product from './Pages/Product'
@@ -27,6 +28,7 @@ export default function SuaRoutes() {
                             <Route path='/Cart' element={<Cart />} exact/>
                             <Route path='/Collaborations' element={<Collaborations />} exact/>
                             <Route path='/Donate-to-us' element={<Donate />} exact/>
+                            <Route path='/order/verify-donation' element={<Ver />} exact/>
                             <Route path='/Events' element={<Events />} exact/>
                             <Route path='/Merch-shop' element={<Shop />} exact/>
                             <Route path='/Product' element={<Product />} exact/>
