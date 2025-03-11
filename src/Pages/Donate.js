@@ -34,7 +34,7 @@ export default function Donate() {
     e.preventDefault();
     try {
       // Post the form data to your donation endpoint
-      const response = await axios.post(`${process.env.REACT_APP_API_URL}/order/donate`, formData, { withCredentials: true });
+      const response = await axios.post('/order/donate', formData, { withCredentials: true });
       console.log(process.env.REACT_APP_API_URL)
       
       // If payment is initialized, redirect the user to the payment URL
