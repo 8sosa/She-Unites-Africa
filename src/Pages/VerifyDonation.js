@@ -17,7 +17,7 @@ const DonationVerification = () => {
 
     if (reference) {
       // Call your backend endpoint to verify the donation using the reference
-      axios.get(`http://localhost:${CLIENT}/order/verify-donation?reference=${reference}`, { withCredentials: true })
+      axios.get(`https://sua-backend.onrender.com/order/verify-donation?reference=${reference}`, { withCredentials: true })
         .then(response => {
           const { message, donationId } = response.data;
           setStatus(message);
