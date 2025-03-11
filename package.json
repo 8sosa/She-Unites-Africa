@@ -44,7 +44,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://violetcarefoundation.netlify.app",
+  "proxy": "https://sua-backend.onrender.com",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "imagemin-cli": "^8.0.0"
