@@ -12,7 +12,6 @@ const DonationVerification = () => {
     // Extract the payment reference from the URL query parameters
     const queryParams = new URLSearchParams(location.search);
     const reference = queryParams.get('reference');
-    const CLIENT = process.env.CLIENT || 3000;
 
 
     if (reference) {
