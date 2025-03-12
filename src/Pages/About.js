@@ -66,7 +66,7 @@ const partners = [
       </div>
       <div className='abtYtBg1'>
         <Container>
-          <h1 className='abtSectionTitle mont'>herstory</h1>
+          <h1 className='abtSectionTitle mont'>her story</h1>
           <p className='abtSectionText mont'>Violet Care Foundation for Women and Nature, Powered by SheUnitesAfrica</p>
           <p className='abtSectionText mont'>Originally founded as SheUnitesAfrica (SUA) in 2020 by Miss Anastacia Amarachi Nickson and Miss Chidimma Frances Okoye, our organization was established with a deep commitment to inspiring and empowering females to contribute to societal transformation and positive change. Due to legal registration requirements, we have now evolved into Violet Care Foundation for Women and Nature, powered by SheUnitesAfrica. While our name has changed, our mission remains unwavering: to create a world where women and girls have equal opportunities to thrive.</p>
           <p className='abtSectionText mont'>Through careful research and engagement with vulnerable communities, we recognize that women and girls experience the scourge of poverty in ways that limit their education, financial security, and overall well-being. Our initiatives are designed to bridge this gap, ensuring that females can access the same opportunities as men and boys.</p>
@@ -141,13 +141,13 @@ const partners = [
             <Col>
               <div className='purpCard tall align-items-center jcsb'>
                 <p className='cardText mont mb-5'>Looking to make an impact? Join our community by volunteering, becoming a partner, or offering your unique skills.</p>
-                <Button className='button'>Get Involved</Button>
+                <a href='https://wa.me/+2349013455798'><Button className='button'>Get Involved</Button></a>
               </div>
             </Col>
             <Col>
               <div className='purpCard tall align-items-center'>
                 <p className='cardText mont mb-5'>Help us reach more women and girls with the resources they need to succeed. Your contribution directly supports our programs and makes our mission possible.</p>
-                <Button className='button'>Donate Now</Button>
+                <a href='/Donate-to-us#donate'><Button className='button'>Donate Now</Button></a>
               </div>
             </Col>
           </Row>

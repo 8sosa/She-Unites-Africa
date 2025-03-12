@@ -14,6 +14,7 @@ import G from '../Images/events/gg.png'
 import H from '../Images/events/hh.JPG'
 import I from '../Images/events/ii.png'
 import J from '../Images/events/jj.png'
+import K from '../Images/events/k.png'
 
 export const EventCarousel = () => {
     const settings = {
@@ -44,7 +45,8 @@ export const EventCarousel = () => {
         { image: G },
         { image: H },
         { image: I },
-        { image: J }
+        { image: J },
+        { image: K }
     ];
 
     return (
