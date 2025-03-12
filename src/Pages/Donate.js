@@ -56,7 +56,7 @@ export default function Donate() {
         <Container className='homeHeroCont'>
           <h1 className='aboutTitle'>donate to</h1>
           <h1 className='aboutTitle'>she unites africa</h1>
-          <button className='atcBtn'>DONATE now</button>
+          <a href='#donate'><button className='atcBtn'>DONATE now</button></a>
         </Container>
       </div>
       <div className='abtYtBg2 p-5'>
@@ -95,7 +95,7 @@ export default function Donate() {
       <div className='lytPurpBg p-5'>
         <Container className='lytPurpBgCont p-5 d-flex justify-content-center align-items-center'>
           <Form onSubmit={handleSubmit}>
-            <div className='d-flex justify-content-center mb-4'>
+            <div className='d-flex justify-content-center mb-4' id='donate'>
               <Form.Check
                 type="switch"
                 id="custom-switch"

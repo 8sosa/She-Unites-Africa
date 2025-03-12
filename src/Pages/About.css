@@ -3,8 +3,6 @@
     font-weight: 300;
     text-transform: uppercase;
 }
-
-/* Existing styles */
 .abtCardCont {
     gap: 10rem;
     display: flex;
@@ -131,6 +129,9 @@
     display: flex;
     flex-direction: row;
     gap: 4rem;
+}
+.modalImg {
+    max-width: 100%;
 }
 /* ===============================================
    Responsive Styles

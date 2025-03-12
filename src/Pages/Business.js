@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { Container, Modal } from 'react-bootstrap';
 import TestimonialCarousel from '../Components/Testimonial';
-import EventPic from '../Images/eventPic.png'
+import Code from '../Images/biz/code.jpg'
+import Dress from '../Images/biz/dress.jpg'
+import Farm from '../Images/biz/farm.jpg'
+import Write from '../Images/biz/write.jpg'
 
 
 export default function Business() {
   const [show, setShow] = useState(false);
-  const [modalContent, setModalContent] = useState({ title: '', tag: '', description: '', pic1: '', pic2: ''});
+  const [modalContent, setModalContent] = useState({ title: '', tag: '', description: '', pic: '' });
 
   const handleClose = () => setShow(false);
   const handleShow = (content) => {
@@ -16,28 +19,24 @@ export default function Business() {
   
   const Businesses = [
     {
-      business: 'Farming',
-      tag: 'We are farmers and we farm. Do you want to farm, also?',
-      description: 'This farming venture has transformed the lives of women by providing them with sustainable income opportunities and fostering economic independence. Through training programs and access to resources, women have gained valuable agricultural skills, enabling them to increase crop yields and improve food security for their families. The venture has also created a supportive community where women collaborate, share knowledge, and inspire each other, ultimately empowering them to take on leadership roles and contribute meaningfully to their households and society.',
-      pic1: EventPic,
+      business: 'We Farm',
+      description: 'Sustainable agriculture is key to food security and economic growth. At She Unites Africa, we empower women in farming by providing resources, training, and networking opportunities to build successful agribusinesses. Whether in urban or rural settings, we believe women have a vital role in feeding nations.',
+      pic: Farm,
     },
     {
-      business: 'Coding',
-      tag: 'We are coders and we code. Do you want to code, also?',
-      description: 'This farming venture has transformed the lives of women by providing them with sustainable income opportunities and fostering economic independence. Through training programs and access to resources, women have gained valuable agricultural skills, enabling them to increase crop yields and improve food security for their families. The venture has also created a supportive community where women collaborate, share knowledge, and inspire each other, ultimately empowering them to take on leadership roles and contribute meaningfully to their households and society.',
-      pic1: EventPic,
+      business: 'We Code',
+      description: "Technology is the future, and women must be at the forefront of innovation. At She Unites Africa, we provide opportunities for women to learn, collaborate, and build tech-driven solutions. Whether you're a beginner or an experienced coder, we create spaces where you can develop your skills and thrive in the digital world.",
+      pic: Code,
     },
     {
-      business: 'Dressing',
-      tag: 'We are dressers and we dress. Do you want to dress, also?',
-      description: 'This farming venture has transformed the lives of women by providing them with sustainable income opportunities and fostering economic independence. Through training programs and access to resources, women have gained valuable agricultural skills, enabling them to increase crop yields and improve food security for their families. The venture has also created a supportive community where women collaborate, share knowledge, and inspire each other, ultimately empowering them to take on leadership roles and contribute meaningfully to their households and society.',
-      pic1: EventPic,
+      business: 'We Dress',
+      description: 'Fashion is more than just clothing—it’s a statement of identity and culture. At She Unites Africa, we support women in the fashion industry, from designers to stylists and entrepreneurs. We encourage creativity, self-expression, and economic empowerment through fashion and design.',
+      pic: Dress,
     },
     {
       business: 'We Write',
-      tag: 'We are writers and we write. Do you want to write, also?',
-      description: 'This farming venture has transformed the lives of women by providing them with sustainable income opportunities and fostering economic independence. Through training programs and access to resources, women have gained valuable agricultural skills, enabling them to increase crop yields and improve food security for their families. The venture has also created a supportive community where women collaborate, share knowledge, and inspire each other, ultimately empowering them to take on leadership roles and contribute meaningfully to their households and society.',
-      pic1: EventPic,
+      description: 'Not all great stories carry the writer’s name, but every powerful message needs a voice. Through She Unites Africa, we support women in ghostwriting and professional writing—helping upcoming bring their ideas to life. We train and connect women writers with paid opportunities, ensuring they thrive in the global writing industry.',
+      pic: Write,
     },
   ];
 
@@ -49,7 +48,7 @@ export default function Business() {
         </Modal.Header>
         <Modal.Body className='modalBody'>
           <div className='d-flex flex-row gap-3'>
-            <img src={modalContent.pic1} alt='first activity'/>
+            <img src={modalContent.pic} alt='first activity' className='modalImg'/>
           </div>
           <p>{modalContent.description}</p>
         </Modal.Body>
@@ -72,11 +71,10 @@ export default function Business() {
             <li>Networking Opportunities</li>
             <li>Showcasing Women-Owned Businesses</li>
           </ol>
-          <div className='d-flex flex-column gap-5 align-items-center'>
+          <div className='d-flex flex-row gap-5 align-items-center'>
             {Businesses.map((item, index) => (
-              <div key={index} onClick={() => handleShow({ title: item.business, description: item.description, tag: item.tag, pic1: item.pic1, pic2: item.pic2 })} className="business-card">
+              <div key={index} onClick={() => handleShow({ title: item.business, description: item.description, pic: item.pic})} className="business-card">
                 <h1>{item.business}</h1>
-                <p>{item.tag}</p>
               </div>
             ))}
           </div>
@@ -91,7 +89,7 @@ export default function Business() {
                 <p className='tal'>Are you a woman with a business idea or an existing venture? Join our programs to gain the skills, funding, and network you need to take your business to the next level.</p>
               </div>
               <div className='ytCard align-items-center p-5 jcsb'>
-                <h1 className='tal'>partners</h1>
+                <h1 className='tal'>Partners</h1>
                 <p className='tal'>Support our mission by collaborating with us to provide resources, funding, or mentorship to women entrepreneurs. Together, we can amplify their impact and transform communities.</p>
               </div>
           </div>
