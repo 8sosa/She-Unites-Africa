@@ -82,7 +82,7 @@ const RegistrationForm = () => {
   return (
     <form 
         // onSubmit={handleSubmit} 
-        name="registration" method="POST" data-netlify="true"
+        name="registration" action="/Collaborations" method="POST" data-netlify="true"
     >
       {/* Hidden input required for Netlify Forms */}
       <input type="hidden" name="form-name" value="registration" />
