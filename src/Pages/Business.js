@@ -35,7 +35,7 @@ export default function Business() {
     },
     {
       business: 'We Write',
-      description: 'Not all great stories carry the writer’s name, but every powerful message needs a voice. Through She Unites Africa, we support women in ghostwriting and professional writing—helping upcoming bring their ideas to life. We train and connect women writers with paid opportunities, ensuring they thrive in the global writing industry.',
+      description: 'Not all great stories carry the writer’s name, but every powerful message needs a voice. Through She Unites Africa, we support women in ghostwriting and professional writing. We train and connect women writers with paid opportunities, ensuring they thrive in the global writing industry.',
       pic: Write,
     },
   ];

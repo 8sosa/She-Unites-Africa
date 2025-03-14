@@ -12,6 +12,7 @@ import Elizabeth from "../Images/team/Elizabeth.jpg";
 import Jericho from "../Images/team/Jericho.jpg";
 import Meymuna from "../Images/team/Meymuna.JPG";
 import Nduka from "../Images/team/Nduka.jpg";
+import Ivy from "../Images/team/ivy.jpg";
 import Tendai from "../Images/team/Tendai.jpg";
 import Theresa from "../Images/team/Theresa.jpg";
 import Miriam from "../Images/partners/Miriam.jpg";
@@ -34,6 +35,7 @@ export default function About() {
     { firstName: "Elizabeth", lastName: "Phiri", role:"Deputy rep for SUA Zambia", src: Elizabeth },
     { firstName: "Andrew", lastName: "Phiri", role:"Volunteer Coordinator", src: Andrew },
     { firstName: "Tendai", lastName: "Nyakuhwa", role:"Assistant program coordinator", src: Tendai },
+    { firstName: "Ivy", lastName: "Kabu", role:"Rep for SUA Ghana", src: Ivy },
 ];
 
 const partners = [
