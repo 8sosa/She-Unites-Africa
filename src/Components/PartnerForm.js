@@ -2,97 +2,23 @@ import React, { useState } from 'react';
 
 const RegistrationForm = () => {
   const [formType, setFormType] = useState('partner');
-//   const [formData, setFormData] = useState({
-//     name: '',
-//     email: '',
-//     company: '',
-//     phone: '',
-//     skills: '',
-//     availability: '',
-//     message: ''
-//   });
-//   const [status, setStatus] = useState('');
 
   // Handle the change between Partner and Volunteer
   const handleTypeChange = (e) => {
     setFormType(e.target.value);
   };
 
-  // Update form state on input change
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setFormData((prevData) => ({
-//       ...prevData,
-//       [name]: value
-//     }));
-//   };
-
-  // Handle form submission
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-
-//     // Select API endpoint and payload based on the form type
-//     const url = formType === 'partner' ? '/api/partners' : '/api/volunteers';
-//     const payload =
-//       formType === 'partner'
-//         ? {
-//             name: formData.name,
-//             email: formData.email,
-//             company: formData.company,
-//             message: formData.message
-//           }
-//         : {
-//             name: formData.name,
-//             email: formData.email,
-//             phone: formData.phone,
-//             skills: formData.skills.split(',').map((s) => s.trim()),
-//             availability: formData.availability,
-//             message: formData.message
-//           };
-
-//     try {
-//       const response = await fetch(url, {
-//         method: 'POST',
-//         headers: { 'Content-Type': 'application/json' },
-//         body: JSON.stringify(payload)
-//       });
-
-//       if (response.ok) {
-//         const data = await response.json();
-//         setStatus(data.message);
-//         // Reset form fields
-//         setFormData({
-//           name: '',
-//           email: '',
-//           company: '',
-//           phone: '',
-//           skills: '',
-//           availability: '',
-//           message: ''
-//         });
-//       } else {
-//         setStatus('Submission failed. Please try again.');
-//       }
-//     } catch (error) {
-//       console.error('Error submitting form:', error);
-//       setStatus('Submission failed. Please try again.');
-//     }
-//   };
-
   return (
-    <form 
-        // onSubmit={handleSubmit} 
-        name="registration" action="/Collaborations" method="POST" data-netlify="true"
-    >
+    <form name="registration" action="/Collaborations" method="POST" data-netlify="true" className='regisForm mont'>
       {/* Hidden input required for Netlify Forms */}
       <input type="hidden" name="form-name" value="registration" />
       
-      <h2>Register as {formType === 'partner' ? 'Partner' : 'Volunteer'}</h2>
+      <h2 className='homeSectionTitle mb-4 tac mont'>Register as {formType === 'partner' ? 'Partner' : 'Volunteer'}</h2>
       
       <p>
-        <label>
-          Registration Type:
-          <select name="registrationType" value={formType} onChange={handleTypeChange}>
+        <label className='gap-2'>
+          Registration Type: 
+          <select name="registrationType" value={formType} onChange={handleTypeChange} className='ddown'>
             <option value="partner">Partner</option>
             <option value="volunteer">Volunteer</option>
           </select>
@@ -102,14 +28,14 @@ const RegistrationForm = () => {
       <p>
         <label>
           Your Name: 
-          <input type="text" name="name" required />
+          <input type="text" name="name" className='inputField' placeholder='Jane Joella' required />
         </label>
       </p>
       
       <p>
         <label>
           Your Email:
-          <input type="email" name="email" required />
+          <input type="email" name="email" className='inputField' placeholder='JaneJoella@test.com' required />
         </label>
       </p>
       
@@ -118,7 +44,7 @@ const RegistrationForm = () => {
         <p>
           <label>
             Company:
-            <input type="text" name="company" />
+            <input type="text" name="company" className='inputField' placeholder='Joella Inc'/>
           </label>
         </p>
       )}
@@ -129,19 +55,19 @@ const RegistrationForm = () => {
           <p>
             <label>
               Phone:
-              <input type="text" name="phone" />
+              <input type="text" name="phone" className='inputField' placeholder='+23412121212'/>
             </label>
           </p>
           <p>
             <label>
               Skills (comma separated):
-              <input type="text" name="skills" />
+              <input type="text" name="skills" className='inputField' placeholder='public speaking, copy writing'/>
             </label>
           </p>
           <p>
             <label>
               Availability:
-              <input type="text" name="availability" />
+              <input type="text" name="availability" className='inputField' placeholder='Weekdays'/>
             </label>
           </p>
         </>
@@ -150,12 +76,12 @@ const RegistrationForm = () => {
       <p>
         <label>
           Message:
-          <textarea name="message" required></textarea>
+          <textarea name="message" className='inputField' placeholder="Hi, I'd like to..."required></textarea>
         </label>
       </p>
       
-      <p>
-        <button type="submit">Send</button>
+      <p className='tac'>
+        <button type="submit" className='atcBtn'>Send</button>
       </p>
       
       {/* {status && <p>{status}</p>} */}

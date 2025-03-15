@@ -174,7 +174,7 @@ export default function Donate() {
         <Container className='d-flex flex-column align-items-center'>
           <h1 className='homeSectionTitle mont mb-5'>impact</h1>
           <ImpactCarousel />
-          <span className='moreLink mont mt-5 mb-5'>See More...</span>
+          {/* <span className='moreLink mont mt-5 mb-5'>See More...</span> */}
         </Container>
       </div>
       <div className='abtYtBg2 p-5'>

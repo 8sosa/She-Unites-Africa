@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Modal } from 'react-bootstrap';
 import TestimonialCarousel from '../Components/Testimonial';
+import RegistrationForm from '../Components/PartnerForm';
 import Code from '../Images/biz/code.jpg'
 import Dress from '../Images/biz/dress.jpg'
 import Farm from '../Images/biz/farm.jpg'
@@ -9,6 +10,7 @@ import Write from '../Images/biz/write.jpg'
 
 export default function Business() {
   const [show, setShow] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState({ title: '', tag: '', description: '', pic: '' });
 
   const handleClose = () => setShow(false);
@@ -54,6 +56,14 @@ export default function Business() {
         </Modal.Body>
       </Modal>
 
+      <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title className='mont'>Get Involved</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <RegistrationForm />
+        </Modal.Body>
+      </Modal>
 
       <div className='homeHero mont'>
         <Container className='homeHeroCont'>
@@ -106,8 +116,8 @@ export default function Business() {
         <Container className='lytPurpBgCont mont align-items-center'>
           <h1>Together, we’re building a future where women entrepreneurs lead the way to economic prosperity and societal change.</h1>
           <div className='d-flex flex-row gap-5'>
-            <button className='atcBtn'>Join Our Program</button>
-            <button className='atcBtn'>Partner With Us</button>
+            <button className='atcBtn' onClick={() => setShowModal(true)}>Join Our Program</button>
+            <button className='atcBtn' onClick={() => setShowModal(true)}>Partner With Us</button>
           </div>
         </Container>
       </div>

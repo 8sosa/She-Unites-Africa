@@ -293,12 +293,21 @@ form {
     font-weight: 600 !important;
     text-transform: uppercase;
 }
+.ddown {
+    border: 2px solid #000;
+    border-radius: 15px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 100%;
+    padding: .5rem;
+}
 .inputField {
     border: 2px solid #000;
     border-radius: 15px;
     background-color: #fff;
     width: 40rem;
     max-width: 100%;
+    padding: .5rem;
 }
 .inputField:placeholder-shown,
 .inputField {

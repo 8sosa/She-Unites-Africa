@@ -8,6 +8,7 @@ import Beverly from '../Images/success/Beverly.jpg';
 import Dennis from '../Images/success/Dennis.jpg';
 import Hildah from '../Images/success/Hildah.jpg';
 import Judith from '../Images/success/Judith.jpg';
+import Vandora from '../Images/success/Vandora.jpg';
 import Lawong from '../Images/success/Lawong.jpg';
 import Sylvanus from '../Images/success/Sylvanus.jpg';
 
@@ -33,7 +34,7 @@ const TestimonialCarousel = () => {
 
   const TestimonialCards = [
     {
-      image: Judith,
+      image: Vandora,
       title: "Vandora’s Journey to Self-Development",
       tag: "Vandora’s Journey",
       text: `The meeting was elaborate and educative, especially on the importance of developing oneself to make a meaningful impact. I have learned to work on myself, find a good mentor, and speak positively because my thoughts affect my daily life.

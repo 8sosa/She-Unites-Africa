@@ -1,12 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
+import RegistrationForm from '../Components/PartnerForm';
 import './Events.css'
 import { EventCarousel } from '../Components/EventCarousel'
 import ImpactCarousel from '../Components/impactCarousel';
-import { Button, Container, Row, Col } from 'react-bootstrap';
+import { Button, Container, Row, Col, Modal } from 'react-bootstrap';
 // import Poster from '../Images/poster.png'
 import Gallery from '../Components/Gallery';
 
 export default function Events() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <>
       <div className='homeHero'>
@@ -56,18 +59,27 @@ export default function Events() {
             <Col>
               <div className='purpCard tall align-items-center jcsb'>
                 <p className='cardText mont mb-5'>Looking to make an impact? Join our community by volunteering, becoming a partner, or offering your unique skills.</p>
-                <Button className='button'>Get Involved</Button>
+                <Button className='button' onClick={() => setShowModal(true)}>Get Involved</Button>
               </div>
             </Col>
             <Col>
               <div className='purpCard tall align-items-center'>
                 <p className='cardText mont mb-5'>Help us reach more women and girls with the resources they need to succeed. Your contribution directly supports our programs and makes our mission possible.</p>
-                <Button className='button'>Donate Now</Button>
+                <a href='/Donate-to-us'><Button className='button'>Donate Now</Button></a>
               </div>
             </Col>
           </Row>
         </Container>
       </div>
+
+      <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title className='mont'>Get Involved</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <RegistrationForm />
+        </Modal.Body>
+      </Modal>
     </>
   )
 }

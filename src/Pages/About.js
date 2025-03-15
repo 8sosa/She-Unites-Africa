@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './About.css';
-import { Button, Container, Row, Col } from 'react-bootstrap';
+import { Button, Container, Row, Col, Modal } from 'react-bootstrap';
 import { FaFistRaised, FaUsers, FaBalanceScale, FaHandsHelping } from "react-icons/fa";
+import RegistrationForm from '../Components/PartnerForm';
 import ImpactCarousel from '../Components/impactCarousel';
 import Andrew from "../Images/team/Andrew.jpg";
 import Binta from "../Images/team/Binta.jpg";
@@ -45,6 +46,9 @@ const partners = [
   {src: Miriam, alt: "Miriam Ujunwa Girls Foundation"},
   {src: Suspads, alt: "Sus Pads"}
 ];
+
+const [showModal, setShowModal] = useState(false);
+
 
   return (
     <>
@@ -122,7 +126,7 @@ const partners = [
         <Container className='d-flex flex-column align-items-center'>
           <h1 className='homeSectionTitle mont mb-5'>impact</h1>
           <ImpactCarousel />
-          <span className='moreLink mont mt-5 mb-5'>See More...</span>
+          {/* <span className='moreLink mont mt-5 mb-5'>See More...</span> */}
         </Container>
       </div>
       <div className='purpBg'>
@@ -143,18 +147,27 @@ const partners = [
             <Col>
               <div className='purpCard tall align-items-center jcsb'>
                 <p className='cardText mont mb-5'>Looking to make an impact? Join our community by volunteering, becoming a partner, or offering your unique skills.</p>
-                <a href='https://wa.me/+2349013455798'><Button className='button'>Get Involved</Button></a>
+                <Button className='button' onClick={() => setShowModal(true)}>Get Involved</Button>
               </div>
             </Col>
             <Col>
               <div className='purpCard tall align-items-center'>
                 <p className='cardText mont mb-5'>Help us reach more women and girls with the resources they need to succeed. Your contribution directly supports our programs and makes our mission possible.</p>
-                <a href='/Donate-to-us#donate'><Button className='button'>Donate Now</Button></a>
+                <a href='/Donate-to-us'><Button className='button'>Donate Now</Button></a>
               </div>
             </Col>
           </Row>
         </Container>
       </div>
+
+      <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title className='mont'>Get Involved</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <RegistrationForm />
+        </Modal.Body>
+      </Modal>
     </>
   )
 }

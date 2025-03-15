@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Collaborations.css';
-import { Col, Container, Row } from 'react-bootstrap';
+import RegistrationForm from '../Components/PartnerForm';
+import { Col, Container, Row, Modal } from 'react-bootstrap';
 import Miriam from "../Images/partners/Miriam.jpg";
 import Suspads from "../Images/partners/Suspads.jpg";
 import Girl from "../Images/partners/Girl.PNG";
@@ -16,13 +17,15 @@ export default function Collaborations() {
     {src: Suspads, alt: "Sus Pads"}
   ];
 
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <>
       <div className='homeHero mont'>
         <Container className='homeHeroCont'>
           <h1 className='aboutTitle'>Stronger Together:</h1>
           <h1 className='aboutTitle'>Building a Better Future.</h1>
-          <button className='atcBtn'>collaborate</button>
+          <button className='atcBtn' onClick={() => setShowModal(true)}>collaborate</button>
         </Container>
       </div>
       <div className='abtYtBg2 p-5 mont'>
@@ -81,9 +84,18 @@ export default function Collaborations() {
         <div className='lytPurpBg p-5'>
           <Container className='lytPurpBgCont mont align-items-center'>
             <h1>Let’s work together to create sustainable impact. Partner with us to empower women and girls and transform communities across Africa.</h1>
-            <button className='atcBtn'>Partner With Us</button>
+            <button className='atcBtn' onClick={() => setShowModal(true)}>Partner With Us</button>
           </Container>
         </div>
+
+        <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title className='mont'>Get Involved</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <RegistrationForm />
+        </Modal.Body>
+      </Modal>
     </>
   )
 }   

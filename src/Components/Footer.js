@@ -19,7 +19,8 @@ export default function Footer() {
     const socialLinks = [
         {to: "https://www.facebook.com/SheunitesAfrica", label: "Facebook"},
         {to: "https://www.instagram.com/sheunitesafrica", label: "Instagram"},
-        {to: "https://www.linkedin.com/in/anastacia-nickson", label: "LinkedIn"}
+        {to: "https://www.linkedin.com/in/anastacia-nickson", label: "LinkedIn"},
+        {to: "https://wa.me/+2349013455798", label: "WhatsApp"}
     ]
 
   return (
@@ -43,9 +44,21 @@ export default function Footer() {
                     <Col>
                         <ul>
                             <li className='footerLinkHeader'>get involved</li>
-                            <li className='footerLinkBody'>Volunteer</li>
-                            <li className='footerLinkBody'>Become a Partner</li>
-                            <li className='footerLinkBody'>Donate Now</li>
+                            <li className='footerLinkBody'>
+                                <NavLink to="/Collaborations" aria-label="Volunteer" className="footerLink">
+                                Volunteer
+                                </NavLink>
+                            </li>
+                            <li className='footerLinkBody'>
+                                <NavLink to="/Collaborations" aria-label="Become a Partner" className="footerLink">
+                                Become a Partner
+                                </NavLink>
+                            </li>
+                            <li className='footerLinkBody'>
+                                <NavLink to="/Donate-to-us" aria-label="Donate Now" className="footerLink">
+                                Donate Now
+                                </NavLink>
+                            </li>
                         </ul>
                     </Col>
                     <Col>

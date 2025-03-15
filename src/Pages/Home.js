@@ -36,7 +36,7 @@ export default function Home() {
                         <Button className='heroBtn mont' onClick={() => setShowModal(true)}>Get Involved</Button>
                     </Col>
                     <Col>
-                        <Button className='heroBtn mont'>Donate Now</Button>
+                    <a href='/donate-to-us'><Button className='heroBtn mont'>Donate Now</Button></a>
                     </Col>
                 </Row>
             </Container>
@@ -91,7 +91,7 @@ export default function Home() {
                     <h1>to us</h1>
                 </div>
                 <p className='donateText mont'>Empowering women through our programs means a better life and development of communities, ending poverty, food security, improved health awareness and sustainable development goals, education, meeting the needs and challenges of socially and economically disadvantaged women, and preparing them for personal, career, and economic success.</p>
-                <Button className='heroBtn mont'>Empower Now</Button>
+                <a href='/donate-to-us'><Button className='heroBtn mont'>Empower Now</Button></a>
             </Container>
         </div>
         {/* <div className='blackBg'>
@@ -151,7 +151,7 @@ export default function Home() {
 
         <Modal show={showModal} onHide={() => setShowModal(false)}>
         <Modal.Header closeButton>
-          <Modal.Title>Get Involved</Modal.Title>
+          <Modal.Title className='mont'>Get Involved</Modal.Title>
         </Modal.Header>
         <Modal.Body>
             <RegistrationForm />
