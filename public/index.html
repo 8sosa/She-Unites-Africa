@@ -48,8 +48,11 @@
       <input type="text" name="skills" />
       <input type="text" name="availability" />
       <textarea name="message" required></textarea>
-
-      <!-- You can add additional dummy fields if necessary -->
     </form>
+    <form className='d-flex flex-column align-items-center full mont' name="newsletter" action="/Collaborations" method="POST" data-netlify="true" style="display: none;">
+      <input type="hidden" name="form-name" value="newsletter" />
+      <input className='inputField' name="Email" type="email" placeholder="Email.address@mail.com" autoComplete='true'/>
+      <button type='submit' className='formButton'>subscribe</button>
+  </form>
   </body>
 </html>

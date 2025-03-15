@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './Home.css';
-import { Button, Col, Container, Form, Row, Modal } from 'react-bootstrap';
+import { Button, Col, Container, Row, Modal } from 'react-bootstrap';
 import RegistrationForm from '../Components/PartnerForm';
 // import EventsCarousel from '../Components/EventsCarousel';
 import ImpactCarousel from '../Components/impactCarousel';
@@ -141,10 +141,11 @@ export default function Home() {
                 <div className='purpCard align-items-center p-5'>
                     <h1 className='shopTitle mont'>newsletter</h1>
                     <p className='cardText mont mt-5 mb-5'>Join our newsletter to stay updated on all our events and latest happenings, we promise not to spam you.</p>
-                    <Form className='d-flex flex-column align-items-center full mont'>
-                        <Form.Control className='inputField' name="Email" type="email" placeholder="Email.address@mail.com" autoComplete='true'/>
-                        <Button type='submit' className='formButton'>subscribe</Button>
-                    </Form>
+                    <form className='d-flex flex-column align-items-center full mont' name="newsletter" action="/Collaborations" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="newsletter" />
+                        <input className='inputField' name="Email" type="email" placeholder="Email.address@mail.com" autoComplete='true'/>
+                        <button type='submit' className='formButton'>subscribe</button>
+                    </form>
                 </div>
             </Container>
         </div>
