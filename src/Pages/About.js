@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './About.css';
-import { Button, Container, Row, Col, Modal } from 'react-bootstrap';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 import { FaFistRaised, FaUsers, FaBalanceScale, FaHandsHelping } from "react-icons/fa";
 import RegistrationForm from '../Components/PartnerForm';
 import ImpactCarousel from '../Components/impactCarousel';
@@ -46,8 +46,6 @@ const partners = [
   {src: Miriam, alt: "Miriam Ujunwa Girls Foundation"},
   {src: Suspads, alt: "Sus Pads"}
 ];
-
-const [showModal, setShowModal] = useState(false);
 
 
   return (
@@ -147,7 +145,7 @@ const [showModal, setShowModal] = useState(false);
             <Col>
               <div className='purpCard tall align-items-center jcsb'>
                 <p className='cardText mont mb-5'>Looking to make an impact? Join our community by volunteering, becoming a partner, or offering your unique skills.</p>
-                <Button className='button' onClick={() => setShowModal(true)}>Get Involved</Button>
+                <a href='/Collaborations'><Button className='heroBtn mont'>Get Involved</Button></a>
               </div>
             </Col>
             <Col>
@@ -159,15 +157,6 @@ const [showModal, setShowModal] = useState(false);
           </Row>
         </Container>
       </div>
-
-      <Modal show={showModal} onHide={() => setShowModal(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title className='mont'>Get Involved</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-            <RegistrationForm />
-        </Modal.Body>
-      </Modal>
     </>
   )
 }

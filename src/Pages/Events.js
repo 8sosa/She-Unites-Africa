@@ -1,15 +1,11 @@
-import React, {useState} from 'react'
-import RegistrationForm from '../Components/PartnerForm';
+import React from 'react'
 import './Events.css'
 import { EventCarousel } from '../Components/EventCarousel'
 import ImpactCarousel from '../Components/impactCarousel';
-import { Button, Container, Row, Col, Modal } from 'react-bootstrap';
-// import Poster from '../Images/poster.png'
+import { Button, Container, Row, Col } from 'react-bootstrap';
 import Gallery from '../Components/Gallery';
 
 export default function Events() {
-  const [showModal, setShowModal] = useState(false);
-
   return (
     <>
       <div className='homeHero'>
@@ -59,7 +55,7 @@ export default function Events() {
             <Col>
               <div className='purpCard tall align-items-center jcsb'>
                 <p className='cardText mont mb-5'>Looking to make an impact? Join our community by volunteering, becoming a partner, or offering your unique skills.</p>
-                <Button className='button' onClick={() => setShowModal(true)}>Get Involved</Button>
+                <a href='/Collaborations'><Button className='heroBtn mont'>Get Involved</Button></a>
               </div>
             </Col>
             <Col>
@@ -71,15 +67,6 @@ export default function Events() {
           </Row>
         </Container>
       </div>
-
-      <Modal show={showModal} onHide={() => setShowModal(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title className='mont'>Get Involved</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-            <RegistrationForm />
-        </Modal.Body>
-      </Modal>
     </>
   )
 }

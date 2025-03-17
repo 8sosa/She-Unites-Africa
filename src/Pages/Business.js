@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Modal } from 'react-bootstrap';
 import TestimonialCarousel from '../Components/Testimonial';
-import RegistrationForm from '../Components/PartnerForm';
+import PartnerForm from '../Components/PartnerForm';
+import { EnterprenuerForm } from '../Components/EnterprenuerForm';
 import Code from '../Images/biz/code.jpg'
 import Dress from '../Images/biz/dress.jpg'
 import Farm from '../Images/biz/farm.jpg'
@@ -11,6 +12,7 @@ import Write from '../Images/biz/write.jpg'
 export default function Business() {
   const [show, setShow] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [showModal1, setShowModal1] = useState(false);
   const [modalContent, setModalContent] = useState({ title: '', tag: '', description: '', pic: '' });
 
   const handleClose = () => setShow(false);
@@ -58,10 +60,18 @@ export default function Business() {
 
       <Modal show={showModal} onHide={() => setShowModal(false)}>
         <Modal.Header closeButton>
-          <Modal.Title className='mont'>Get Involved</Modal.Title>
+          <Modal.Title className='mont'>Partner With Us</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <RegistrationForm />
+            <PartnerForm />
+        </Modal.Body>
+      </Modal>
+      <Modal show={showModal1} onHide={() => setShowModal1(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title className='mont'>Join as an Enterprenuer</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <EnterprenuerForm />
         </Modal.Body>
       </Modal>
 
@@ -94,11 +104,11 @@ export default function Business() {
         <Container className='lytPurpBgCont mont'>
           <h1 className='tal'>How to Get Involved</h1>
           <div className='htgi'>
-              <div className='ytCard align-items-start p-5 jcsb'>
+              <div className='ytCard align-items-start p-5 jcsb' onClick={() => setShowModal1(true)}>
                 <h1 className='tal'>Entrepreneurs</h1>
                 <p className='tal'>Are you a woman with a business idea or an existing venture? Join our programs to gain the skills, funding, and network you need to take your business to the next level.</p>
               </div>
-              <div className='ytCard align-items-center p-5 jcsb'>
+              <div className='ytCard align-items-center p-5 jcsb' onClick={() => setShowModal(true)}>
                 <h1 className='tal'>Partners</h1>
                 <p className='tal'>Support our mission by collaborating with us to provide resources, funding, or mentorship to women entrepreneurs. Together, we can amplify their impact and transform communities.</p>
               </div>
@@ -116,7 +126,7 @@ export default function Business() {
         <Container className='lytPurpBgCont mont align-items-center'>
           <h1>Together, we’re building a future where women entrepreneurs lead the way to economic prosperity and societal change.</h1>
           <div className='d-flex flex-row gap-5'>
-            <button className='atcBtn' onClick={() => setShowModal(true)}>Join Our Program</button>
+            <button className='atcBtn' onClick={() => setShowModal1(true)}>Join Our Program</button>
             <button className='atcBtn' onClick={() => setShowModal(true)}>Partner With Us</button>
           </div>
         </Container>

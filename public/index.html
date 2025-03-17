@@ -39,20 +39,51 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <form name="registration" action="/Collaborations" method="POST" data-netlify="true" style="display: none;">
-      <input type="hidden" name="form-name" value="registration" />
-      <input type="text" name="name" required />
-      <input type="email" name="email" required />
-      <input type="text" name="company" />
-      <input type="text" name="phone" />
-      <input type="text" name="skills" />
-      <input type="text" name="availability" />
-      <textarea name="message" required></textarea>
-    </form>
-    <form className='d-flex flex-column align-items-center full mont' name="newsletter" action="/Collaborations" method="POST" data-netlify="true" style="display: none;">
-      <input type="hidden" name="form-name" value="newsletter" />
-      <input className='inputField' name="Email" type="email" placeholder="Email.address@mail.com" autoComplete='true'/>
-      <button type='submit' className='formButton'>subscribe</button>
+    
+  <form name="newsletter" action="/Collaborations" method="POST" data-netlify="true" style="display: none;">
+    <input type="hidden" name="form-name" value="newsletter" />
+    <input className='inputField' name="Email" type="email" placeholder="Email.address@mail.com" autoComplete='true'/>
+    <button type='submit' className='formButton'>subscribe</button>
+  </form>
+  <form name="PartnerForm" action="/Collaborations" method="POST" data-netlify="true" style="display: none;">
+      <input type="hidden" name="form-name" value="PartnerForm" />
+      <input type="text" name="name" className='inputField' placeholder='Jane Joella' required />
+      <input type="email" name="email" className='inputField' placeholder='JaneJoella@test.com' required />
+      <input type="text" name="company" className='inputField' placeholder='Joella Inc'/>
+      <input type="text" name="phone" className='inputField' placeholder='+23412121212'/>
+      <textarea name="message" className='inputField' placeholder="Hi, I'd like to..."required></textarea>
+  </form>
+  <form name="EnterprenuerForm" action="/Collaborations" method="POST" data-netlify="true" style="display: none;">
+    <input type="hidden" name="form-name" value="EnterprenuerForm" />  
+      <input type="text" name="name" className='inputField' placeholder='Jane Joella' required />
+      <input type="email" name="email" className='inputField' placeholder='JaneJoella@test.com' required />
+      <input type="text" name="phone" className='inputField' placeholder='+23412121212'/>
+      <input type="text" name="country" className='inputField' placeholder='Nigeria'/>
+      <select name="business_experience" className='inputField' required>
+          <option value="">Select One</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+      </select>
+          <input type="checkbox" id='coding' name='field[]' value="coding"/>
+          <input type="checkbox" id='writing' name='field[]' value="writing"/>
+          <input type="checkbox" id='fashion' name='field[]' value="fashion"/>
+          <input type="checkbox" id='farming' name='field[]' value="farming"/>
+      <select name="prior_experience" className='inputField' required>
+          <option value="">Select One</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+      </select>
+      <textarea name="reason" className='inputField' rows="4" required></textarea>
+      <textarea name="goals" className='inputField' rows="4" required></textarea>
+  </form>
+  <form name="VolunteerForm" action="/Collaborations" method="POST" data-netlify="true" style="display: none;">
+    <input type="hidden" name="form-name" value="VolunteerForm" />
+    <input type="text" name="name" className='inputField' placeholder='Jane Joella' required />
+    <input type="email" name="email" className='inputField' placeholder='JaneJoella@test.com' required />
+    <input type="text" name="phone" className='inputField' placeholder='+23412121212'/>
+    <input type="text" name="skills" className='inputField' placeholder='public speaking, copy writing'/>
+    <input type="text" name="availability" className='inputField' placeholder='Weekdays'/>
+    <textarea name="message" className='inputField' placeholder="Hi, I'd like to..."required></textarea>
   </form>
   </body>
 </html>

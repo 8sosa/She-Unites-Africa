@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './Collaborations.css';
-import RegistrationForm from '../Components/PartnerForm';
+import PartnerForm from '../Components/PartnerForm';
 import { Col, Container, Row, Modal } from 'react-bootstrap';
 import Miriam from "../Images/partners/Miriam.jpg";
 import Suspads from "../Images/partners/Suspads.jpg";
@@ -93,7 +93,7 @@ export default function Collaborations() {
           <Modal.Title className='mont'>Get Involved</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <RegistrationForm />
+          <PartnerForm />
         </Modal.Body>
       </Modal>
     </>

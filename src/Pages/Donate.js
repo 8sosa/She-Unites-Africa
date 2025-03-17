@@ -1,9 +1,11 @@
 import React, {useState} from 'react'
-import { Col, Container, Row, Form, Button } from 'react-bootstrap';
+import { Col, Container, Row, Form, Button, Modal } from 'react-bootstrap';
 import ImpactCarousel from '../Components/impactCarousel';
 import { FaFistRaised, FaUsers, FaHandsHelping } from "react-icons/fa";
 import axios from 'axios';
-
+import PartnerForm from '../Components/PartnerForm';
+import EnterprenuerForm from '../Components/EnterprenuerForm';
+import VolunteerForm from '../Components/VolunteerForm';
 
 export default function Donate() {
   const [activeDonation, setActiveDonation] = useState("");
@@ -48,6 +50,10 @@ export default function Donate() {
       alert("There was an error processing your donation. Please try again.");
     }
   };
+
+  const [showModal, setShowModal] = useState(false);
+  const [showModal1, setShowModal1] = useState(false);
+  const [showModal2, setShowModal2] = useState(false);
 
 
   return (
@@ -193,21 +199,46 @@ export default function Donate() {
         <Container className='lytPurpBgCont mont'>
           <h1 className='tal'>How We Collaborate</h1>
           <div className='donateCont'>
-            <div className='blackCard'>
+            <div className='blackCard' onClick={() => setShowModal(true)}>
                 <FaHandsHelping className='abtIcon' />
                 <h1 className='abtSectionHeader'>Volunteer</h1>
             </div>
-            <div className='blackCard'>
+            <div className='blackCard' onClick={() => setShowModal1(true)}>
                 <FaFistRaised className='abtIcon' />
                 <h1 className='abtSectionHeader'>Merchandise Support</h1>
             </div>
-            <div className='blackCard'>
+            <div className='blackCard' onClick={() => setShowModal2(true)}>
                 <FaUsers className='abtIcon' />
                 <h1 className='abtSectionHeader'>Partnership Opportunities</h1>
             </div>
           </div>
         </Container>
       </div>
+
+      <Modal show={showModal} onHide={() => setShowModal(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title className='mont'>Volunteer with Us</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <VolunteerForm />
+        </Modal.Body>
+      </Modal>
+      <Modal show={showModal} onHide={() => setShowModal1(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title className='mont'>Enterprenuer?</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <EnterprenuerForm />
+        </Modal.Body>
+      </Modal>
+      <Modal show={showModal} onHide={() => setShowModal2(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title className='mont'>Partner with Us</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <PartnerForm />
+        </Modal.Body>
+      </Modal>
     </>
   )
 }

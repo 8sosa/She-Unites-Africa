@@ -1,13 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Home.css';
-import { Button, Col, Container, Row, Modal } from 'react-bootstrap';
-import RegistrationForm from '../Components/PartnerForm';
-// import EventsCarousel from '../Components/EventsCarousel';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 import ImpactCarousel from '../Components/impactCarousel';
 import Vector1 from '../Images/vec1.png';
 import Vector2 from '../Images/vec2.png';
 import OverviewGallery from '../Components/OverviewGallery';
-// import ShirtPic from '../Images/shirt.jpeg';
 import Miriam from "../Images/partners/Miriam.jpg";
 import Suspads from "../Images/partners/Suspads.jpg";
 import Girl from "../Images/partners/Girl.PNG";
@@ -24,8 +21,6 @@ export default function Home() {
         {src: Suspads, alt: "Sus Pads"}
       ];
 
-      const [showModal, setShowModal] = useState(false);
-
   return (
     <>
         <div className='homeHero'>
@@ -33,7 +28,7 @@ export default function Home() {
                 <h1 className='heroTitle mont'>Empowering Women Transforming Communities.</h1>
                 <Row>
                     <Col>
-                        <Button className='heroBtn mont' onClick={() => setShowModal(true)}>Get Involved</Button>
+                    <a href='/Collaborations'><Button className='heroBtn mont'>Get Involved</Button></a>
                     </Col>
                     <Col>
                     <a href='/donate-to-us'><Button className='heroBtn mont'>Donate Now</Button></a>
@@ -149,15 +144,6 @@ export default function Home() {
                 </div>
             </Container>
         </div>
-
-        <Modal show={showModal} onHide={() => setShowModal(false)}>
-        <Modal.Header closeButton>
-          <Modal.Title className='mont'>Get Involved</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-            <RegistrationForm />
-        </Modal.Body>
-      </Modal>
     </>
   )
 }
