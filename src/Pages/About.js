@@ -2,7 +2,6 @@ import React from 'react';
 import './About.css';
 import { Button, Container, Row, Col } from 'react-bootstrap';
 import { FaFistRaised, FaUsers, FaBalanceScale, FaHandsHelping } from "react-icons/fa";
-import RegistrationForm from '../Components/PartnerForm';
 import ImpactCarousel from '../Components/impactCarousel';
 import Andrew from "../Images/team/Andrew.jpg";
 import Binta from "../Images/team/Binta.jpg";

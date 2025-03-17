@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Modal } from 'react-bootstrap';
 import TestimonialCarousel from '../Components/Testimonial';
 import PartnerForm from '../Components/PartnerForm';
-import { EnterprenuerForm } from '../Components/EnterprenuerForm';
+import EnterprenuerForm from '../Components/EnterprenuerForm';
 import Code from '../Images/biz/code.jpg'
 import Dress from '../Images/biz/dress.jpg'
 import Farm from '../Images/biz/farm.jpg'
