@@ -223,7 +223,7 @@ export default function Donate() {
           <VolunteerForm />
         </Modal.Body>
       </Modal>
-      <Modal show={showModal} onHide={() => setShowModal1(false)}>
+      <Modal show={showModal1} onHide={() => setShowModal1(false)}>
         <Modal.Header closeButton>
           <Modal.Title className='mont'>Enterprenuer?</Modal.Title>
         </Modal.Header>
@@ -231,7 +231,7 @@ export default function Donate() {
           <EnterprenuerForm />
         </Modal.Body>
       </Modal>
-      <Modal show={showModal} onHide={() => setShowModal2(false)}>
+      <Modal show={showModal2} onHide={() => setShowModal2(false)}>
         <Modal.Header closeButton>
           <Modal.Title className='mont'>Partner with Us</Modal.Title>
         </Modal.Header>

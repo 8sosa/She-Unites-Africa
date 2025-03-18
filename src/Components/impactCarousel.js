@@ -15,7 +15,7 @@ const ImpactCarousel = () => {
     autoplaySpeed: 6000,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 1,
         }

@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import React from 'react'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
+import WhatsappIcon from './Components/Whatsapp'; 
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Business from './Pages/Business'
@@ -37,6 +38,7 @@ export default function SuaRoutes() {
                         </Routes>
                     </div>
                 <Footer />
+                <WhatsappIcon />
             </div>
         </Router>
     )

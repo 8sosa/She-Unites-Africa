@@ -271,6 +271,9 @@
     flex-direction: row;
     gap: 5rem;
     margin-top: 5rem;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .partners img {
     width: 100%;
@@ -320,7 +323,7 @@ form {
    =============================================== */
 
 /* For tablets and medium devices */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .heroTitle {
         font-size: 4rem;
     }
@@ -335,6 +338,7 @@ form {
         text-align: center;
     }
     .statementCardText {
+        font-size: 1rem;
         max-width: 100%;
     }
     .gallery {
@@ -361,10 +365,10 @@ form {
         padding: 1.5rem;
     }
     .statementCardTitle {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .statementCardText {
-        font-size: 1.3rem;
+        font-size: .8rem;
     }
     .ytTitle {
         font-size: 2.5rem;
@@ -426,6 +430,12 @@ form {
     }
     .ytText {
         font-size: 1.3rem;
+    }
+    .cardTitle {
+        font-size: 1.5rem;
+    }
+    .cardText {
+        font-size: 1rem;
     }
     .statementCard {
         padding: 1rem;

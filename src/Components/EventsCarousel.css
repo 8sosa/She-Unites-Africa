@@ -63,4 +63,7 @@
     .carousel-item {
         padding: 10px; /* Even tighter spacing on small screens */
     }
+    .impactCard {
+        max-width: 18rem;
+    }
 }
