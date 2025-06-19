@@ -101,7 +101,15 @@
   .whatsapp-float:hover {
     background-color: #1EBE5D;
   }
-  
+ .partnerLogoDiv {
+    padding: .5rem;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
 /* ===============================================
    Responsive Styles
    =============================================== */

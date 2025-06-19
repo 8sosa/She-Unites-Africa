@@ -2,21 +2,10 @@ import React, {useState} from 'react';
 import './Collaborations.css';
 import PartnerForm from '../Components/PartnerForm';
 import { Col, Container, Row, Modal } from 'react-bootstrap';
-import Miriam from "../Images/partners/Miriam.jpg";
-import Suspads from "../Images/partners/Suspads.jpg";
-import Girl from "../Images/partners/Girl.PNG";
-import Ladies from "../Images/partners/Ladies.PNG";
-import Utunyange from "../Images/partners/Utunyange.JPG";
+import { Partners } from '../Components/Partners';
+
 
 export default function Collaborations() {
-  const partners = [
-    {src: Girl, alt: "Girl Up Rwanda"},
-    {src: Ladies, alt: "Ladies with Stories"},
-    {src: Utunyange, alt: "Utunyange Initiative"},
-    {src: Miriam, alt: "Miriam Ujunwa Girls Foundation"},
-    {src: Suspads, alt: "Sus Pads"}
-  ];
-
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -74,11 +63,7 @@ export default function Collaborations() {
       <div className='abtYtBg2'>
         <Container className='d-flex flex-column align-items-center'>
           <h1 className='shopTitle purp mont'>partners</h1>   
-          <div className='partners'>
-              {partners.map((partner, index) => (
-              <img src={partner.src} alt={partner.alt} className='partnerLogo' key={index}/>
-              ))}
-          </div>
+          <Partners />
         </Container>
       </div>
         <div className='lytPurpBg p-5'>

@@ -4,17 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./EventsCarousel.css";
 import "./EventCarousel.css";
-import A from '../Images/events/aa.jpg'
-import B from '../Images/events/bb.jpg'
-import C from '../Images/events/cc.png'
-import D from '../Images/events/dd.JPG'
-import E from '../Images/events/ee.JPG'
-import F from '../Images/events/ff.JPG'
-import G from '../Images/events/gg.png'
-import H from '../Images/events/hh.JPG'
-import I from '../Images/events/ii.png'
-import J from '../Images/events/jj.png'
-import K from '../Images/events/k.png'
 
 export const EventCarousel = () => {
     const settings = {
@@ -35,31 +24,19 @@ export const EventCarousel = () => {
         ]
     };
 
-    const eventItems = [
-        { image: A },
-        { image: B },
-        { image: C },
-        { image: D },
-        { image: E },
-        { image: F },
-        { image: G },
-        { image: H },
-        { image: I },
-        { image: J },
-        { image: K }
-    ];
+    const importAll = (requireContext) => {
+        return requireContext.keys().map(requireContext);
+      };
+      
+    const images = importAll(require.context('../Images/events', false, /\.(png|jpe?g|svg)$/));
+      
 
     return (
         <div className="EventsCarousel">
             <Slider {...settings}>
-                {eventItems.map((event, index) => (
+                {images.map((image, index) => (
                     <div className="image-container" key={index}>
-                        <img src={event.image} alt="Sample Event" />
-                        {/* Optional overlay text */}
-                        {/* <div className="overlay-text mont purp">
-                            <h1>{event.title}</h1>
-                            <p>{event.date}</p>
-                        </div> */}
+                        <img src={image} alt={`Event ${index}`} />
                     </div>
                 ))}
             </Slider>

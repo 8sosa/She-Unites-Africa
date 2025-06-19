@@ -1,26 +1,15 @@
 import React from 'react';
 import './Home.css';
 import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Partners } from '../Components/Partners';
 import ImpactCarousel from '../Components/impactCarousel';
 import Vector1 from '../Images/vec1.png';
 import Vector2 from '../Images/vec2.png';
 import OverviewGallery from '../Components/OverviewGallery';
-import Miriam from "../Images/partners/Miriam.jpg";
-import Suspads from "../Images/partners/Suspads.jpg";
-import Girl from "../Images/partners/Girl.PNG";
-import Ladies from "../Images/partners/Ladies.PNG";
-import Utunyange from "../Images/partners/Utunyange.JPG";
 
 
 export default function Home() {
-    const partners = [
-        {src: Girl, alt: "Girl Up Rwanda"},
-        {src: Ladies, alt: "Ladies with Stories"},
-        {src: Utunyange, alt: "Utunyange Initiative"},
-        {src: Miriam, alt: "Miriam Ujunwa Girls Foundation"},
-        {src: Suspads, alt: "Sus Pads"}
-      ];
-
+   
   return (
     <>
         <div className='homeHero'>
@@ -124,11 +113,7 @@ export default function Home() {
         <div className='purpBg'>
             <Container className='d-flex flex-column align-items-center'>
             <h1 className='shopTitle mont'>partners</h1>   
-            <div className='partners'>
-                {partners.map((partner, index) => (
-                <img src={partner.src} alt={partner.alt} className='partnerLogo' key={index}/>
-                ))}
-            </div>
+            <Partners />
             </Container>
         </div>
         <div className='ytBg'>

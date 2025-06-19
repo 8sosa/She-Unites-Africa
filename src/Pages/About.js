@@ -15,11 +15,7 @@ import Nduka from "../Images/team/Nduka.jpg";
 import Ivy from "../Images/team/ivy.jpg";
 import Tendai from "../Images/team/Tendai.jpg";
 import Theresa from "../Images/team/Theresa.jpg";
-import Miriam from "../Images/partners/Miriam.jpg";
-import Suspads from "../Images/partners/Suspads.jpg";
-import Girl from "../Images/partners/Girl.PNG";
-import Ladies from "../Images/partners/Ladies.PNG";
-import Utunyange from "../Images/partners/Utunyange.JPG";
+import { Partners } from '../Components/Partners';
 
 
 export default function About() {
@@ -37,15 +33,6 @@ export default function About() {
     { firstName: "Tendai", lastName: "Nyakuhwa", role:"Assistant program coordinator", src: Tendai },
     { firstName: "Ivy", lastName: "Kabu", role:"Rep for SUA Ghana", src: Ivy },
 ];
-
-const partners = [
-  {src: Girl, alt: "Girl Up Rwanda"},
-  {src: Ladies, alt: "Ladies with Stories"},
-  {src: Utunyange, alt: "Utunyange Initiative"},
-  {src: Miriam, alt: "Miriam Ujunwa Girls Foundation"},
-  {src: Suspads, alt: "Sus Pads"}
-];
-
 
   return (
     <>
@@ -129,11 +116,7 @@ const partners = [
       <div className='purpBg'>
         <Container className='d-flex flex-column align-items-center'>
           <h1 className='shopTitle mont'>partners</h1>   
-          <div className='partners'>
-            {partners.map((partner, index) => (
-              <img src={partner.src} alt={partner.alt} className='partnerLogo' key={index}/>
-            ))}
-          </div>
+          <Partners />
         </Container>
       </div>
       <div className='ytBg'>
