@@ -53,7 +53,7 @@ export default function NavBar() {
           <div className='navSocials mid'>
             <a href='https://www.facebook.com/SheunitesAfrica'><FaFacebookF className='navSocial'/></a>
             <a href= "https://www.instagram.com/sheunitesafrica"><FaInstagram className='navSocial'/></a>
-            <a href="https://www.linkedin.com/in/anastacia-nickson"><FaLinkedinIn className='navSocial'/></a>
+            <a href="https://www.linkedin.com/company/violet-care-foundation-powered-by-sheunitesafrica/"><FaLinkedinIn className='navSocial'/></a>
           </div>
         </div>
       </Container>
@@ -65,7 +65,7 @@ export default function NavBar() {
           <div className='d-flex flex-row navSocials'>
             <a href='https://www.facebook.com/SheunitesAfrica'><FaFacebookF className='navSocial'/></a>
             <a href= "https://www.instagram.com/sheunitesafrica"><FaInstagram className='navSocial'/></a>
-            <a href="https://www.linkedin.com/in/anastacia-nickson"><FaLinkedinIn className='navSocial'/></a>
+            <a href="https://www.linkedin.com/company/violet-care-foundation-powered-by-sheunitesafrica/"><FaLinkedinIn className='navSocial'/></a>
           </div>
         </Offcanvas.Body>
       </Offcanvas>

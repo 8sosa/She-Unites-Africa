@@ -19,7 +19,7 @@ export default function Footer() {
     const socialLinks = [
         {to: "https://www.facebook.com/SheunitesAfrica", label: "Facebook"},
         {to: "https://www.instagram.com/sheunitesafrica", label: "Instagram"},
-        {to: "https://www.linkedin.com/in/anastacia-nickson", label: "LinkedIn"},
+        {to: "https://www.linkedin.com/company/violet-care-foundation-powered-by-sheunitesafrica/", label: "LinkedIn"},
         {to: "https://wa.me/+2349013455798", label: "WhatsApp"}
     ]
 
@@ -32,8 +32,8 @@ export default function Footer() {
                     <Col>
                         <ul>
                             <li className='footerLinkHeader'>Quick links</li>
-                            {navLinks.map(({ to, label, ariaLabel }) => (
-                            <li key={to} className='footerLinkBody'>
+                            {navLinks.map(({ to, label, ariaLabel }, index) => (
+                            <li key={index} className='footerLinkBody'>
                                 <NavLink to={to} aria-label={ariaLabel} className="footerLink">
                                 {label}
                                 </NavLink>
