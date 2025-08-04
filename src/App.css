@@ -110,7 +110,7 @@ a {
 /* For screens smaller than 576px (mobile devices) */
 @media (max-width: 576px) {
   .purpBg {
-    padding: 3rem;
+    padding: 2rem;
   }
   .blackBg,
   .ytBg {

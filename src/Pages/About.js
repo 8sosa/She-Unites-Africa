@@ -13,6 +13,8 @@ import Jericho from "../Images/team/Jericho.jpg";
 import Meymuna from "../Images/team/Meymuna.JPG";
 import Nduka from "../Images/team/Nduka.jpg";
 import Ivy from "../Images/team/ivy.jpg";
+import Sarah from "../Images/team/Sarah.jpg";
+import Catherine from "../Images/team/Catherine.jpg";
 import Tendai from "../Images/team/Tendai.jpg";
 import Theresa from "../Images/team/Theresa.jpg";
 import { Partners } from '../Components/Partners';
@@ -26,12 +28,14 @@ export default function About() {
     { firstName: "Nduka-aku", lastName: "Oluchi Rejoice", role:"Rep for SUA Nigeria", src: Nduka },
     { firstName: "Meymuna", lastName: "Awad Idris", role:"Rep for SUA Ethiopia x Rwanda", src: Meymuna },
     { firstName: "Binta", lastName: "Badije", role:"Rep for SUA Gambia", src: Binta },
+    { firstName: "Ivy", lastName: "Kabu", role:"Rep for SUA Ghana", src: Ivy },
     { firstName: "Jericho", lastName: "Nyirenda", role:"Rep for Malawi", src: Jericho },
     { firstName: "Theresa", lastName: "Muparazdi", role:"Rep for SUA Zambia", src: Theresa },
     { firstName: "Elizabeth", lastName: "Phiri", role:"Deputy rep for SUA Zambia", src: Elizabeth },
+    { firstName: "Catherine", lastName: "Ndau", role:"Assistant Rep for SUA Malawi ", src: Catherine },
+    { firstName: "Sarah", lastName: "Garba", role:"Community Manager", src: Sarah },
     { firstName: "Andrew", lastName: "Phiri", role:"Volunteer Coordinator", src: Andrew },
     { firstName: "Tendai", lastName: "Nyakuhwa", role:"Assistant program coordinator", src: Tendai },
-    { firstName: "Ivy", lastName: "Kabu", role:"Rep for SUA Ghana", src: Ivy },
 ];
 
   return (
