@@ -4,10 +4,10 @@
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "imagemin-cli": "^8.0.0",
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
+    "imagemin-cli": "^8.0.0",
     "react": "^18.0.0",
     "react-bootstrap": "^2.10.7",
     "react-dom": "^18.0.0",
@@ -27,7 +27,7 @@
     "build:optimized": "npm run build && npm run optimize-images",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },  
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -46,7 +46,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://sua-backend.onrender.com",
-  "devDependencies": {
-  }
+  "proxy": "https://sua-backend.onrender.com"
 }

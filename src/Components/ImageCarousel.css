@@ -1,0 +1,32 @@
+.slick-slide img {
+    transition: transform 0.3s ease;
+}
+
+.slick-slide:hover img {
+    transform: scale(1.03);
+}
+
+.slick-dots li button:before {
+    color: #999 !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #000 !important;
+}
+.carousel-image{
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+@media (max-width: 576px) {
+    .carousel-image {
+        width: 400px;
+    }
+    .imageContainer {
+        max-width: 100%;
+        width: 400px;
+    }
+}

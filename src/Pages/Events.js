@@ -1,6 +1,7 @@
 import React from 'react'
 import './Events.css'
 import { EventCarousel } from '../Components/EventCarousel'
+// import ImageCarousel from '../Components/Carousel';
 import ImpactCarousel from '../Components/impactCarousel';
 import { Button, Container, Row, Col } from 'react-bootstrap';
 import Gallery from '../Components/Gallery';
@@ -30,11 +31,13 @@ export default function Events() {
         </Container>
       </div> */}
       <div>
-        <Container>
-          {/* <h1 className='eventSectionTitle mont'>upcoming Events</h1>
-          <EventCarousel /> */}
+        <Container className='homeEventsSection'>
+          {/* <h1 className='eventSectionTitle mont'>upcoming Events</h1> */}
+          {/* <ImageCarousel /> */}
           <h1 className='eventSectionTitle mont mt-5'>past Events</h1>
-          <EventCarousel />
+          <div style={{ overflow: 'visible', width: '100%' }}>
+            <EventCarousel />
+          </div>
         </Container>
       </div>
       <div>

@@ -63,7 +63,7 @@ export default function Footer() {
                     </Col>
                     <Col>
                         <ul>
-                            <li className='footerLinkHeader'>social media</li>
+                            <li className='footerLinkHeader' key={'social media'}>social media</li>
                             {socialLinks.map(({to, label}, index) => (
                                 <a href={to}><li key={index} className='footerLinkBody'>{label}</li></a>
                             ))}

@@ -1,60 +1,249 @@
-.image-container {
-  position: relative;
-  max-width: 35rem;
+.slick-track {
+  display: flex !important;
+  align-items: center;
+  width: 100% !important;
+}
+
+.slick-slide {
+  flex: 0 0 auto !important;
+  width: auto !important;
+}
+
+.slick-list {
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+.EventsCarousel {
   width: 100%;
+  overflow: visible !important;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  padding: 10px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.EventsCarouselPic {
+  width: 100%;
+  max-width: 25rem;
+  height: 250px;
+  border: 3px solid #a76399;
+  border-radius: 20px;
+  object-fit: cover;
+  background-color: white;
+}
+
+.EventsCarousel {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 5rem;
+  overflow: hidden;
+  outline: #a76399;
+}
+
+/* Wrapper ensures height on mobile */
+.carousel-wrapper {
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slick-slider,
+.slick-list,
+.slick-track {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-track {
+  display: flex !important;
+  align-items: center;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: auto !important;
+}
+
+.image-container {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.EventsCarouselPic {
+  width: 100%;
+  height: 250px;
+  max-width: 25rem;
+  border: 3px solid #a76399;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  object-fit: contain;
+  background-color: white;
+}
+
+/* Hide arrows */
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+/* Force slick to render correctly */
+.EventsCarousel .slick-slider {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 100% !important;
+  min-height: 280px !important;
+  overflow: visible !important;
+}
+
+/* Prevent parent overflow hiding it */
+.EventsCarousel {
+  overflow: visible !important;
+}
+
+/* Force the carousel to have visible height */
+.carousel-wrapper,
+.slick-slider,
+.slick-track,
+.slick-list {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 300px; /* ✅ adjust to your design */
+  overflow: visible;
+}
+
+/* Make sure each image actually displays */
+.image-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-container img {
-  width: fit-content;
-  max-width: 100%;
-  height: 100%;
-  max-height: 35rem;
-  object-fit: contain;
-  border: 5px solid #A76399;
-  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* optional limit */
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.image-container .overlay-text {
-  position: absolute;
-  top: 75%; /* Adjust as needed */
-  left: 30%; /* Adjust as needed */
-  transform: translate(-50%, -50%);
-  text-align: start;
-}
 
-.image-container .overlay-text h1 {
-  font-size: 2.5rem;
-  font-weight: 500;
-}
-
-.image-container .overlay-text p {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
-/* ===============================================
- Responsive Styles
- =============================================== */
-
-/* For tablets and medium devices */
+/* Responsive */
 @media (max-width: 992px) {
-  .image-container {
-      max-width: 100%;
-  }
-  .image-container .overlay-text h1 {
-      font-size: 2rem;
-  }
-  .image-container .overlay-text p {
-      font-size: 1.2rem;
+  .EventsCarouselPic {
+    max-width: 22rem;
   }
 }
 
-/* For very small devices */
+@media (max-width: 768px) {
+  .EventsCarouselPic {
+    max-width: 18rem;
+  }
+  .EventsCarousel {
+    margin-bottom: 3rem;
+  }
+}
+
 @media (max-width: 576px) {
-  .image-container .overlay-text h1 {
-      font-size: 1.5rem;
+  .carousel-wrapper {
+    min-height: 280px;
   }
-  .image-container .overlay-text p {
-      font-size: 1rem;
+  .EventsCarouselPic, .image-container img {
+    width: 100%;
+    min-height: 200px;
+    max-width: 10rem;
+
   }
+  .image-container {
+    padding: 0.25rem;
+  }
+  .slick-list,
+  .slick-track {
+    min-height: 260px !important;
+  }
+  /* Force reflow for mobile devices */
+  .EventsCarousel .slick-slider {
+    width: 100% !important;
+    min-width: 100% !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
+/* Ensure carousel always has height */
+.slick-list {
+  min-height: 280px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-track {
+  display: flex !important;
+  align-items: center;
+  min-height: 280px !important;
+}
+
+/* Image container fix */
+.image-container {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  height: 100%;
+}
+
+.EventsCarouselPic {
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+  min-height: 220px;
+  border: 3px solid #a76399;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  object-fit: cover; /* ✅ use cover instead of contain */
+  background-color: white;
+}
+
+.slick-slider {
+  pointer-events: auto !important;
+}
+
+.slick-track {
+  transition: transform 0.8s ease !important;
+}
+
+.slick-initialized.slick-slider {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
 }
