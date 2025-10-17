@@ -8,17 +8,17 @@ import "./EventsCarousel.css";
 import A from "../Images/events/aa.jpg";
 import B from "../Images/events/bb.jpg";
 import C from "../Images/events/cc.png";
-// import D from "../Images/events/dd.jpg";
-// import E from "../Images/events/ee.jpg";
-// import F from "../Images/events/ff.jpg";
-// import G from "../Images/events/gg.png";
-// import H from "../Images/events/hh.jpg";
-// import I from "../Images/events/ii.png";
-// import J from "../Images/events/jj.png";
-// import K from "../Images/events/k.png";
-// import L from "../Images/events/ll.png";
-// import M from "../Images/events/mm.png";
-// import N from "../Images/events/nn.png";
+import D from "../Images/events/dd.jpg";
+import E from "../Images/events/ee.jpg";
+import F from "../Images/events/ff.jpg";
+import G from "../Images/events/gg.png";
+import H from "../Images/events/hh.jpg";
+import I from "../Images/events/ii.png";
+import J from "../Images/events/jj.png";
+import K from "../Images/events/k.png";
+import L from "../Images/events/ll.png";
+import M from "../Images/events/mm.png";
+import N from "../Images/events/nn.png";
 
 export const EventCarousel = () => {
   const sliderRef = useRef(null);
@@ -60,8 +60,8 @@ export const EventCarousel = () => {
   }, [ready]);
 
   const images = [A, B, C, 
-    // D, 
-    // E, F, G, H, I, J, K, L, M, N
+    D, 
+    E, F, G, H, I, J, K, L, M, N
   ];
 
   if (!ready) return <div className="text-center">Loading carousel...</div>;
