@@ -50,11 +50,11 @@ export default function About() {
         <Container className='abtCardCont'>
           <div className='abtCard'>
             <h1 className='mont'>our mission</h1>
-            <p className='mont'>Our mission is to educate and empower women all over Africa with the skills and confidence for financial independence, maintain a healthy lifestyle, and be the best version of themselves that they can be.</p>
+            <p className='mont'>We build women-led communities, enterprises, and health systems by providing African women with the tools, networks, resources, and collective power necessary to achieve economic autonomy, influence decision-making, and transform their societies.</p>
           </div>
           <div className='abtCard'>
             <h1 className='mont'>our vission</h1>
-            <p className='mont'>A world where every African female is able to use their voice and be heard, make informed choices as well as decisions and participate in contributing to the economic success of their local and global environment.</p>
+            <p className='mont'>A continent where African women design, lead, and own the economic and social systems that shape their lives, building communities rooted in autonomy, wellbeing, and collective power.</p>
           </div>
         </Container>
       </div>

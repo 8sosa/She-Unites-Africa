@@ -33,7 +33,7 @@ export default function Home() {
                     <Col>
                         <div className='statementCard mont'>
                             <h2 className='statementCardTitle'>Vission</h2>
-                            <p className='statementCardText'>A world where every African female is able to use their voice and be heard, make informed choices as well as decisions and participate in contributing to the economic success of their local and global environment.</p>
+                            <p className='statementCardText'>A continent where African women design, lead, and own the economic and social systems that shape their lives, building communities rooted in autonomy, wellbeing, and collective power.</p>
                         </div>
                     </Col>
                     <Col className='vectorCol'><img src={Vector1} alt='A vector of a lady holding ballons' className='vector1' /></Col>
@@ -43,7 +43,7 @@ export default function Home() {
                     <Col>
                         <div className='statementCard mont'>
                             <h2 className='statementCardTitle'>Mission</h2>
-                            <p className='statementCardText'>To educate and empower women all over Africa with the skills and confidence for financial independence, maintain a healthy lifestyle, and be the best version of themselves that they can be.</p>
+                            <p className='statementCardText'>We build women-led communities, enterprises, and health systems by providing African women with the tools, networks, resources, and collective power necessary to achieve economic autonomy, influence decision-making, and transform their societies.</p>
                         </div>
                     </Col>
                 </Row>
