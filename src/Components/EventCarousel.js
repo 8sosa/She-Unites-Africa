@@ -8,7 +8,7 @@ import "./EventsCarousel.css";
 import A from "../Images/events/aa.jpg";
 import B from "../Images/events/bb.jpg";
 import C from "../Images/events/cc.png";
-import D from "../Images/events/dd.jpg";
+// import D from "../Images/events/dd.jpg";
 import E from "../Images/events/ee.jpg";
 import F from "../Images/events/ff.jpg";
 import G from "../Images/events/gg.png";
