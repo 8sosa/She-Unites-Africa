@@ -8,6 +8,7 @@
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
     "imagemin-cli": "^8.0.0",
+    "lint": "^0.8.19",
     "react": "^18.0.0",
     "react-bootstrap": "^2.10.7",
     "react-dom": "^18.0.0",
@@ -46,5 +47,11 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://sua-backend.onrender.com"
+  "proxy": "https://sua-backend.onrender.com",
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.5.0"
+  }
 }
