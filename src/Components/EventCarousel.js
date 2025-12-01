@@ -8,12 +8,11 @@ import "./EventsCarousel.css";
 import A from "../Images/events/aa.jpg";
 import B from "../Images/events/bb.jpg";
 import C from "../Images/events/cc.png";
-// import D from "../Images/events/dd.jpg";
-import DA from "../Images/events/dd.jpg";
-import E from "../Images/events/ee.jpg";
-import F from "../Images/events/ff.jpg";
+import D from "../Images/events/dd.JPG";
+import E from "../Images/events/ee.JPG";
+import F from "../Images/events/ff.JPG";
 import G from "../Images/events/gg.png";
-import H from "../Images/events/hh.jpg";
+import H from "../Images/events/hh.JPG";
 import I from "../Images/events/ii.png";
 import J from "../Images/events/jj.png";
 import K from "../Images/events/k.png";
@@ -60,7 +59,7 @@ export const EventCarousel = () => {
     }
   }, [ready]);
 
-  const images = [A, B, C, DA, E, F, G, H, I, J, K, L, M, N];
+  const images = [A, B, C, D, E, F, G, H, I, J, K, L, M, N];
 
   if (!ready) return <div className="text-center">Loading carousel...</div>;
 
